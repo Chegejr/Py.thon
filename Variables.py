@@ -1,5 +1,4 @@
 # Python Variables
-"""
 #variables are containers thatcan hold any data type eg. Text, numerical data
 
 # Calculate the total monthly expenses 
@@ -15,7 +14,7 @@ Others = int(input("Enter the amount spent on other unclassifiable items: "));
 Total_Monthly_Spend = int(rent + airtime + groceries + gas + water + Others);
 
 print("The total monthly expense for this month is ", + Total_Monthly_Spend);
-"""
+
 
 #calculate the total time taken to travel from New York to Baltimore and from Baltimore to Pittsburg hence
 #find the total time taken for the whole journey. Assuming no breaks are taken.
