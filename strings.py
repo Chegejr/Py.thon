@@ -1,5 +1,5 @@
-# strings refers to a sequence of characters
-# They are stored in different memory addresses therefore we can be able to access a specific character by use of index
+# string refers to a sequence of characters
+# They are stored in different specific memory addresses therefore we can be able to access a specific character by use of index
 # A string is found within quotation marks
 # Keep in mind that strings are immutable, once created they cannot be changed
  
