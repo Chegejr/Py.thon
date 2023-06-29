@@ -19,3 +19,11 @@ print((Tuple1).count("Ugali")); # Counts how many times a specified item appears
 
 print(type(Tuple1)); # Checking if indeed what we have is a tuple
 tuple3  = print(("Ugali, ")* 4);
+
+# Appending an item into  an already existing tuple
+
+c = list(tuple2);
+c.append("Added");
+tuple2 = tuple(c);
+
+print(tuple2);
