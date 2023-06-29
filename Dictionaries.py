@@ -57,3 +57,8 @@ print(Exam_results.items());
 
 for x in Exam_results:
     print(x);
+    
+# Generating both keys and their corresponding values using for loops
+
+for x,y in Exam_results.items():
+    print(x,y);
