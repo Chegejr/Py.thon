@@ -2,6 +2,7 @@
 In python lists are used to store multiple items in a single variable
 Lists are mutable, they can be changed
 Assuming that I was going to the market, below is how my shopping list will look like
+list can hold any type of values from text, Int, Float
 """
 
 Shopping_list = ["soap", "bread", "sugar", "veggies", "salt", "shampoo", "Cooking oil"];
