@@ -53,3 +53,7 @@ print(Exam_results.values());
 
 print(Exam_results.items());
 
+# Manipulating dictionary using for loops
+
+for x in Exam_results:
+    print(x);
