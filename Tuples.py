@@ -27,3 +27,28 @@ c.append("Added");
 tuple2 = tuple(c);
 
 print(tuple2);
+
+# Secoond example of appending an element to a tuple by first changing it into a list and back to tuple
+tuple4 = ("Arsenal", "Me", 56, "Anorld", "Guava")
+print(tuple4);
+print(type(tuple4));
+
+
+jr = list(tuple4);
+print(jr);
+print(type(jr));
+jr.append("junior");
+print(jr)
+
+tuple4 = tuple(jr);
+print(type(tuple4));
+print(tuple4);
+
+# Manipulating tuples using "For Loops"
+
+for x in (tuple2):
+    print(x);
+    
+for y in tuple4:
+    print(y);
+
