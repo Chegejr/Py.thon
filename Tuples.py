@@ -18,3 +18,4 @@ print(tuple2[-1][2]); # Tuple slicing a tuple inside another tuple
 print((Tuple1).count("Ugali")); # Counts how many times a specified item appears in the list
 
 print(type(Tuple1)); # Checking if indeed what we have is a tuple
+tuple3  = print(("Ugali, ")* 4);
