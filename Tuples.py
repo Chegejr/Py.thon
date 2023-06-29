@@ -1,16 +1,16 @@
 """
 Tuples are special kind of lists
-They main difference between lists and tuples is that lists are mutable while tuples are not
-Also tuples items are contained in circle brackets while lists are enclosed in square brackets
+The main difference between lists and tuples is that lists are mutable while tuples are not
+Also, tuples items are contained in circle brackets while lists are enclosed in square brackets
 Indexing in both tuples and lists is similar
-Tuples are ordered and te order does not change
-Tuples also allow duplicate elements
+Tuples are ordered and the order does not change
+Tuples also allow duplicate elements as in lists
 """
 Tuple1 = ("Future", 21, "Mia", "Ugali", "Banana", "Ugali", 78);
 tuple2 = ("Chege", "Menengai", 89, ("Einstein", 78, "Ugali"));
 
-print(Tuple1);
-print(tuple2)
+print(Tuple1); #prints contents of tuple1
+print(tuple2); # Prints out the contents of tuple2  
 print(Tuple1 + tuple2); # Tuple concatenation
 
 print(Tuple1[0]); # Tuple slicing
