@@ -39,6 +39,9 @@ var3 = int(5)
 print("The value of var3 is", var3)
 print(type(var3)) 
 
+var4 = 3 + 7j
+print(var4)
+print(type(var4))
 
 # Assigning one value to multiple variables
 
