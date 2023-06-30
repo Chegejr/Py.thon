@@ -26,6 +26,20 @@ print(x)
 print(y)
 print(z)
 
+# Casting a variable
+var1 = float(5)
+print("The value of var1 is", var1)
+print(type(var1)) 
+
+var2 = str(5)
+print("The value of var2 is", var2)
+print(type(var2)) 
+
+var3 = int(5)
+print("The value of var3 is", var3)
+print(type(var3)) 
+
+
 # Assigning one value to multiple variables
 
 a = b = c = "Guava"
