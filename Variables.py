@@ -26,6 +26,12 @@ print(x)
 print(y)
 print(z)
 
+# Assigning one value to multiple variables
+
+a = b = c = "Guava"
+print(a)
+print(b)
+print(c)
 
 # Calculate the total monthly expenses 
 # the below : rent, groceries, gas ...are varibales or containers used to hold the amount of each spend for a given month 
