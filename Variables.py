@@ -1,5 +1,22 @@
 # Python Variables
 #variables are containers thatcan hold any data type eg. Text, numerical data
+x = str(3)
+y = int(3)
+z = float(3)
+
+if type(x) is str:
+	print("Variable x is a string")
+else:
+	print("Variable x is not a string")
+print(y)
+
+if isinstance(y,int):
+	print("Variable y is an integer")
+else:
+	print("Variable y is not an integer")
+print(type(z))
+print(z)
+
 
 # Calculate the total monthly expenses 
 # the below : rent, groceries, gas ...are varibales or containers used to hold the amount of each spend for a given month 
