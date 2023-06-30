@@ -17,6 +17,15 @@ else:
 print(type(z))
 print(z)
 
+Fruits = ["Mango", "Orange", "Apple"]
+print("My favorite fruits are", Fruits)
+
+#Unpacking 
+x, y, z = Fruits
+print(x)
+print(y)
+print(z)
+
 
 # Calculate the total monthly expenses 
 # the below : rent, groceries, gas ...are varibales or containers used to hold the amount of each spend for a given month 
