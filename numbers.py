@@ -3,6 +3,12 @@
 #we have float or the decimal numbers, integers or the whole numbers
 #For exaample lets build a simple calculator
 
+integers = [12, 3, 67, 78, 9190];
+print("The following are examples of integers: ", integers);
+
+floating_numbers = [0.897, 89.7, 3.14, 19.897];
+print("The following are examples of float numbers in python: ", floating_numbers);
+
 num1 = int(float(input("Enter you first number: ")));
 num2 = int(float(input("Enter your second number: ")));
 
