@@ -39,3 +39,14 @@ if year%4 == 0:
     print("The year", year,"is a leap year")
 else:
     print("The year",year," is not a leap year")
+
+# Nested if statement
+
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
