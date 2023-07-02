@@ -60,5 +60,13 @@ for i in locations:
     else:
         print("Key not found in",i)
 
+# Use of contiue in for loops
+# Below is a program to print out the square of numbers in the range(1,5) excluding the squares of even numbers
+for i in range(1,5):
+    square = i*i
+    if i%2 !=0:
+        print("The square of",i,"is",square)
+    else:
+        continue
 
 
