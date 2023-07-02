@@ -1,6 +1,6 @@
 # run each code separately after the comment upto to the start of the next comment
-
-#  Calculating the total monthly expenses using for loop
+# A "For" Loop is used to repeat a specific block of code a known number of times
+# Calculating the total monthly expenses using for loop
 
 monrthly_expenses = [40800, 45030, 38990, 54230, 43202, 49000, 48650]
 total = 0
@@ -40,7 +40,7 @@ elif mean >80:
     print("Mean grade is A, PASS!")
 
 
-# printing all even numbers in a range from 1-100
+# printing all even numbers in a range from 0-100
 
 for x in range(0, 100):
     if x % 2== 0:
