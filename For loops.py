@@ -46,3 +46,19 @@ for x in range(0, 100):
     if x % 2== 0:
         print(x, "is EVEN")
     
+# Breaking out of a loop
+
+key_location = "chair"
+locations = ["garage", "chair", "kitchen", "living room", "bedroom"]
+
+for i in locations:
+    if i == key_location:
+        print("Key found on the ",i)
+        # the loop is terminated when the value of i matches the key location which is after second iteration
+        # simply because the key location "chair" is second on the list but at index 1
+        break
+    else:
+        print("Key not found in",i)
+
+
+
