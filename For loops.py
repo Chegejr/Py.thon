@@ -48,8 +48,18 @@ for x in range(0, 100):
     
 # Breaking out of a loop
 
+# exit the loop when a certain condition is met
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+
 key_location = "chair"
 locations = ["garage", "chair", "kitchen", "living room", "bedroom"]
+
+# Example 2 use of "Break"
 
 for i in locations:
     if i == key_location:
