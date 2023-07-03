@@ -55,16 +55,16 @@ for x in fruits:
   print(x)
   if x == "banana":
     break
+      
+# Example 2 use of "Break"
 
 key_location = "chair"
 locations = ["garage", "chair", "kitchen", "living room", "bedroom"]
 
-# Example 2 use of "Break"
-
 for i in locations:
     if i == key_location:
         print("Key found on the ",i)
-        # the loop is terminated when the value of i matches the key location which is after second iteration
+        # the loop is terminated when the value of i matches the key location which is on second iteration
         # simply because the key location "chair" is second on the list but at index 1
         break
     else:
