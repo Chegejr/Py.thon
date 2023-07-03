@@ -17,7 +17,6 @@ for i in range(len(monrthly_expenses)):
 print("Total expenses", total)
 
 # Calculating the total marks and the mean score
-
 marks = [89, 76, 81, 66, 78, 93]
 total = 0
 
@@ -41,15 +40,12 @@ elif mean >80:
 
 
 # printing all even numbers in a range from 0-100
-
 for x in range(0, 100):
     if x % 2== 0:
         print(x, "is EVEN")
     
 # Breaking out of a loop
-
 # exit the loop when a certain condition is met
-
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   print(x)
@@ -57,7 +53,6 @@ for x in fruits:
     break
       
 # Example 2 use of "Break"
-
 key_location = "chair"
 locations = ["garage", "chair", "kitchen", "living room", "bedroom"]
 
