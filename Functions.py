@@ -36,3 +36,15 @@ def kids(*kid):
 
 kids("mary","kim","junior","anorld")
 
+# keyword arguments
+# we can also pass arguments in the function by use of "Key = value" syntax
+# Below is how
+
+def players(player1, player2, player3,player4):
+    print("The 4th player on the list is ", player4)
+    print("The 3rd player on the list is ", player3)
+    print("The 2nd player on the list is ", player2)
+    print("Finally the best player of all time is ", player1)
+
+players(player1="Cristiano",player2="messi",player3="zlatan",player4="lukaku")
+
