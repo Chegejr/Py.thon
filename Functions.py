@@ -57,3 +57,12 @@ def names(**name):
 
 names(fname="Josiah",lname="Chege jr",sur_name="Waweru")
 
+# Passing a default argument into a function.
+# this helps when the function that needs an argument is called with no argument in it, therefore it prints out the default argument
+#  Below is how
+
+def favorite_food(food="Fried chicken"):
+    print("My favorite food is ", food)
+favorite_food("Ugali")
+favorite_food()
+favorite_food("Pizza")
