@@ -17,3 +17,11 @@ def forloop():
         else:
             print("even number")
 forloop()
+
+# An argument is the value passed in the brackets when a fucntion is called
+# A parameter refers to the variable passed in the brackets when defining a function
+
+def helloworld(first_name, last_name):
+    print(first_name,"",last_name)
+helloworld("Hello", "World!")
+
