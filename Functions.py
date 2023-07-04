@@ -48,3 +48,12 @@ def players(player1, player2, player3,player4):
 
 players(player1="Cristiano",player2="messi",player3="zlatan",player4="lukaku")
 
+# If the number of keyword arguments is unkown, add "**" before the parameter name
+#  this way the fucntion will receive arguments in a "dictionary" form where it will pick the right argument to display arccodingly
+# Below is how
+
+def names(**name):
+    print("My last name is ",name["lname"])
+
+names(fname="Josiah",lname="Chege jr",sur_name="Waweru")
+
