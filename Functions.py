@@ -25,3 +25,14 @@ def helloworld(first_name, last_name):
     print(first_name,"",last_name)
 helloworld("Hello", "World!")
 
+# If one is not sure of how many parameters are required in a function, put a "*" before the name of the parameter
+# This way the function will receive a tuple of arguments and will pick the right one accordingly.
+# Below is how
+
+def kids(*kid):
+    print("The first born in our family is ",kid[2])
+    # here we use indexing to access the right argument from the below given tuple
+    # note if we dont include the indexing, the function will print all the entire tuple.
+
+kids("mary","kim","junior","anorld")
+
