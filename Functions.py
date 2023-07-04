@@ -66,3 +66,11 @@ def favorite_food(food="Fried chicken"):
 favorite_food("Ugali")
 favorite_food()
 favorite_food("Pizza")
+
+# A for loop in a function
+
+def dishes(food):
+    for x in food:
+        print(x)
+food = ["Ugali skuma", "Rice beans","Chapo beans","Pilau"]
+dishes(food)
