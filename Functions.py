@@ -74,3 +74,17 @@ def dishes(food):
         print(x)
 food = ["Ugali skuma", "Rice beans","Chapo beans","Pilau"]
 dishes(food)
+
+# Just like loops, functions cannot be empty, therefore incase yuh have an empty function use the pass statement
+#  so that you don`t get an error when you call the function
+
+def myfunction():
+    pass
+myfunction()
+
+# Use of return to return a value in a function
+def multiples(x):
+        return 5*x
+print(multiples(6))
+print(multiples(5))
+print(multiples(7))
