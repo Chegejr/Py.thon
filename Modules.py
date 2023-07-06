@@ -20,3 +20,15 @@ import math
 
 result = math.sqrt(91725)
 print(result)
+
+# the dir() function is used to list all the function names that can be used within the module
+import platform
+
+x = platform.system()
+print(x)
+
+import platform
+
+x = dir(platform)
+print(x)
+
