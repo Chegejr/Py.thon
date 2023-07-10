@@ -58,3 +58,9 @@ book = json.loads(addresses) #loads the string "addresses" and converts it to a 
 print("The contents of the address book are:", book)
 print(type(addresses)) # The "addresses" is a string
 print(type(book)) # The "book"  is a dictionary after conversion
+
+print(book) # The only difference from " print(addresses) " is that "addresses" is string type while book is a "dictionary"
+
+# Back to our question of printing michael`s pager
+print(book["michael"]) # Prints out michael`s` entire information
+print(book["michael"]["Pager"]) #prints out michael`s pager number
