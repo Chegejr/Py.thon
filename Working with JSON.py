@@ -31,3 +31,9 @@ addressBook["leo"] = {
     "Address": "Nou Camp",
     "Pager": 10180243
 }
+# import the JSON module
+
+import json
+# What the below " json.dumps(addressBook) " does is. It takes in the " addressBook " as input which is in form of a dictionary and dumps it as 
+# a string. Thats the use of "s" in the dumps function.
+# As the json module dumps the input into a string, it converts theinput in a json format
