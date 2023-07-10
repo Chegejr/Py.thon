@@ -34,12 +34,20 @@ addressBook["leo"] = {
 
 # import the JSON module
 import json
+
 # What the below " json.dumps(addressBook) " does is. It takes in the " addressBook " as input which is in form of a dictionary and dumps it as 
 # a string. Thats the use of "s" in the dumps function.
 # As the json module dumps the input into a string in a variable name "addresses", it converts the input in a json format
-
 addresses= json.dumps(addressBook) 
 print(addresses)
+
 # Next is to write the json formated code in file
 with open("C://Users//user//Desktop// Py.thon//addressbook.txt", "w") as f:
     f.write(addresses)
+    
+# After the above we need now to create a python program that will open and read the contents of the json file
+# We first need to open the file
+file = open("C://Users//user//Desktop//Py.thon//addressbook.txt", "r")
+addresses = file.read()
+print(addresses)
+
