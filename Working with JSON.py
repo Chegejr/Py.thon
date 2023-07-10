@@ -51,3 +51,10 @@ file = open("C://Users//user//Desktop//Py.thon//addressbook.txt", "r")
 addresses = file.read()
 print(addresses)
 
+# Lets say we need to print out the pager number for scofield.
+# First we need to convert the dictionary that was convrted to string back to dictionary
+import json
+book = json.loads(addresses) #loads the string "addresses" and converts it to a dictionary
+print("The contents of the address book are:", book)
+print(type(addresses)) # The "addresses" is a string
+print(type(book)) # The "book"  is a dictionary after conversion
