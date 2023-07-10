@@ -64,3 +64,7 @@ print(book) # The only difference from " print(addresses) " is that "addresses" 
 # Back to our question of printing michael`s pager
 print(book["michael"]) # Prints out michael`s` entire information
 print(book["michael"]["Pager"]) #prints out michael`s pager number
+
+#  Our Final task is to print out the entire contents of the addressbook
+for x in book:
+  print("The following is "+x+"`s personal details",book[x]) # Prints out the personal details of each person in a new row
