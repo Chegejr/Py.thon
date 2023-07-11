@@ -13,3 +13,18 @@ file2 = open("C:\\Users\\user\\Desktop\\Py.thon\\file2.txt", "a") # The "a" is f
 # This allows to make modifications to the already existing text buits still keep the previous text without overwriting
 file2.write("I am Chegejr" ) #when i change from "Hello, welcome home" to "I am Chegejr" the previous txt remains when you the file
 file2.close
+
+
+# Reading the entire content of a file
+
+file2 = open("C:\\Users\\user\\Desktop\\Py.thon\\file2.txt", "r") #make sure to include the read mode "r"
+print(file2.read())
+file2.close()
+
+# Reading the content of a file line by line
+file2 = open("C:\\Users\\user\\Desktop\\Py.thon\\file2.txt", "r") #make sure to include the read mode "r"
+for line in file2:
+    wordCount = line.split(" ")
+    print(len(wordCount))
+    print(line)
+file2.close()
