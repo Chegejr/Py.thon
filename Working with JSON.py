@@ -71,6 +71,7 @@ for x in book:
 
 # We can parse the following into json string
 # When you convert python to json, python objects are converted  to json(javascript) equivalent.
+# Example 1
 import json
 
 print(json.dumps({"name": "John", "age": 30})) # A python "dictionary" to a json "object"
@@ -82,3 +83,25 @@ print(json.dumps(31.76)) # A python "Float" to a json "number"
 print(json.dumps(True)) # A python Boolean "True" to a json boolean "true"
 print(json.dumps(False)) # A python Boolean "False" to a json boolean "false"
 print(json.dumps(None)) # A python "Nonetype" to a json "null" 
+
+#  Example 2
+import json
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+# Note that "X" is python "dictionary" with different data types inside it
+# convert into JSON:
+y = json.dumps(x)
+
+# the result is a JSON string:
+print(y)
