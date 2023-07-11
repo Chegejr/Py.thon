@@ -68,3 +68,15 @@ print(book["michael"]["Pager"]) #prints out michael`s pager number
 #  Our Final task is to print out the entire contents of the addressbook
 for x in book:
   print("The following is "+x+"`s personal details",book[x]) # Prints out the personal details of each person in a new row
+
+# We can parse the following into json string
+import json
+print(json.dumps({"name": "John", "age": 30})) # A dictionary
+print(json.dumps(["apple", "bananas"])) # A list
+print(json.dumps(("apple", "bananas"))) # A tuple
+print(json.dumps("hello")) # A string
+print(json.dumps(42)) # An integer
+print(json.dumps(31.76)) # Float
+print(json.dumps(True)) # Boolean 
+print(json.dumps(False)) # Boolean
+print(json.dumps(None)) # Nonetype
