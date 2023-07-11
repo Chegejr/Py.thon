@@ -99,9 +99,10 @@ x = {
     {"model": "Ford Edge", "mpg": 24.1}
   ]
 }
-# Note that "X" is python "dictionary" with different data types inside it
-# convert into JSON:
-y = json.dumps(x)
+# Note also that when you print "Example 1" which is a json string it is difficult to read its contents since theres no identation
+# or line breaks, you can improve readability by specifying an indentation when parsing the json string.
+y = json.dumps(x, indent=4) # specifying an indentation when parsing the json string
+
 
 # the result is a JSON string:
 print(y)
