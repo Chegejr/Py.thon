@@ -70,13 +70,15 @@ for x in book:
   print("The following is "+x+"`s personal details",book[x]) # Prints out the personal details of each person in a new row
 
 # We can parse the following into json string
+# When you convert python to json, python objects are converted  to json(javascript) equivalent.
 import json
-print(json.dumps({"name": "John", "age": 30})) # A dictionary
-print(json.dumps(["apple", "bananas"])) # A list
-print(json.dumps(("apple", "bananas"))) # A tuple
-print(json.dumps("hello")) # A string
-print(json.dumps(42)) # An integer
-print(json.dumps(31.76)) # Float
-print(json.dumps(True)) # Boolean 
-print(json.dumps(False)) # Boolean
-print(json.dumps(None)) # Nonetype
+
+print(json.dumps({"name": "John", "age": 30})) # A python "dictionary" to a json "object"
+print(json.dumps(["apple", "bananas"])) # A python "list" to a json "array"
+print(json.dumps(("apple", "bananas"))) # A python "tuple" to a json "array"
+print(json.dumps("hello")) # A python "string" to a json "string"
+print(json.dumps(42)) # A python "integer" to a json "number"
+print(json.dumps(31.76)) # A python "Float" to a json "number"
+print(json.dumps(True)) # A python Boolean "True" to a json boolean "true"
+print(json.dumps(False)) # A python Boolean "False" to a json boolean "false"
+print(json.dumps(None)) # A python "Nonetype" to a json "null" 
