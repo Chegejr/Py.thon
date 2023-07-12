@@ -48,3 +48,17 @@ for x in demofile: # This loops through the file "demofile" and it prints each l
     #the file till all the content is printed
     print(x)
 # Note: You should always close your files, in some cases, due to buffering, changes made to a file may not show until you close the file.
+# To delete a file, you must import the OS module, and run its os.remove() function:
+import os
+os.remove("demofile")
+
+# to avoid an error, it adviseable to check if the file already exists
+import os
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
+# Deleting a folder. use the os.rmdir() function
+
+import os
+os.rmdir("my folder")
