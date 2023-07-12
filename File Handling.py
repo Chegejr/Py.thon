@@ -1,3 +1,18 @@
+"""
+There are four different methods (modes) for opening a file:
+"r" - Read - Default value. Opens a file for reading, error if the file does not exist
+
+"a" - Append - Opens a file for appending, creates the file if it does not exist
+
+"w" - Write - Opens a file for writing, creates the file if it does not exist
+
+"x" - Create - Creates the specified file, returns an error if the file exists
+
+In addition you can specify if the file should be handled as binary or text mode
+"t" - Text - Default value. Text mode
+
+"b" - Binary - Binary mode (e.g. images)
+"""
 # Below is how to create a file 
 
 file = open("C:\\Users\\user\\Desktop\\Py.thon\\file.txt", "w") # I have created my file called "file". 
@@ -28,3 +43,8 @@ for line in file2:
     print(len(wordCount))
     print(line)
 file2.close()
+
+for x in demofile: # This loops through the file "demofile" and it prints each line everytime it loops through 
+    #the file till all the content is printed
+    print(x)
+# Note: You should always close your files, in some cases, due to buffering, changes made to a file may not show until you close the file.
