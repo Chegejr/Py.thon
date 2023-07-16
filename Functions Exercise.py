@@ -11,3 +11,17 @@ def calculate_area(x,y):
         print("Area:",area)
 
 calculate_area(12,12)
+
+# Write a function called print_pattern that takes integer number as an argument and 
+# prints pattern below if the input is 3
+# *
+# **
+# ***
+def print_pattern(n):
+    for x in range(n):
+        s= ""
+        for j in range(x+1):
+            s = s+"*"
+        print(s)    
+
+print_pattern(10)
