@@ -9,6 +9,8 @@ def calculate_area(x,y):
     elif shape_type == "r":
         area= (x*y)
         print("Area:",area)
+    else:
+     print("Shape error!")
 
 calculate_area(12,12)
 # Write a function called calculate_area that takes base and height as an input and returns and area of a triangle. 
