@@ -152,3 +152,14 @@ ar12 = np.array([1,2,3,4,5,6])
 for x in np.nditer(ar12[::2]):
     print(x)
 
+# Enumerate on following 1D arrays elements:
+import numpy as np
+arr = np.array([1, 2, 3])
+for idx, x in np.ndenumerate(arr):
+  print(idx, x)
+
+# Enumerate on following 2D array's elements:
+import numpy as np
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+for idx, x in np.ndenumerate(arr):
+  print(idx, x)
