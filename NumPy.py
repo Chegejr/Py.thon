@@ -192,3 +192,51 @@ ar12 = np.array([1,2,3,4])
 ar13 = np.array([5,6,7,8])
 newarr12 = np.dstack((ar12,ar13))
 print(newarr12)
+
+# Array splitting is the oppositye of array joining
+# Using------> array_split()
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5, 6])
+newarr = np.array_split(arr, 3)
+print(newarr)
+
+# Split the array in 4 parts:
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5, 6])
+newarr = np.array_split(arr, 4)
+print(newarr)
+# Note: We also have the method split() available but it will not adjust the elements when elements are 
+# less in source array for splitting like in example above, array_split() worked properly but split() would fail.
+
+# Access the splitted arrays:
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5, 6])
+newarr = np.array_split(arr, 3)
+print(newarr[0])
+print(newarr[1])
+print(newarr[2])
+
+# Split the 2-D array into three 2-D arrays.
+import numpy as np
+arr = np.array([[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12]])
+newarr = np.array_split(arr, 3)
+print(newarr)
+
+# Split the 2-D array into three 2-D arrays.
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
+newarr = np.array_split(arr, 3)
+print(newarr)
+
+# Split the 2-D array into three 2-D arrays along rows.
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
+newarr = np.array_split(arr, 3, axis=1)
+print(newarr)
+
+# Use the hsplit() method to split the 2-D array into three 2-D arrays along rows.
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
+newarr = np.hsplit(arr, 3)
+print(newarr)
+# Note: Similar alternates to vstack() and dstack() are available as vsplit() and dsplit().
