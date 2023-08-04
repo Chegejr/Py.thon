@@ -4,17 +4,14 @@
 # this is what makes numpy arrays faster than traditional python lists(upto 50x)
 
 import numpy
-
 arr = numpy.array([1,2,3,4,5,6,7])
 print(arr)
 print(arr[0])
 
 # Checking what dimension is the array
-
 print("Number of dimensions is :",arr.ndim)
 
 # specifiying the number of dimensions in an array
-
 ar = numpy.array([1,2,3,4,5],ndmin= 3)
 print(ar)
 print("Number of dimensions is :",ar.ndim)
@@ -36,7 +33,6 @@ print(arr[0:2,2])
 
 
 # datatypes in numpy
-
 import numpy as np
 arr1 = np.array(["chege","array","moon","terminal"])
 print(arr1.dtype)
@@ -45,7 +41,6 @@ print(arr1.dtype)
 # variable array and specifying the new data type as follows
 arr3 = np.array([23,98,56,19,37])
 print(arr3.dtype)
-
 arr2 = arr3.astype('f') #also we can do this----->arr2 = arr3.astype(float)
 print(arr2.dtype)
 
@@ -57,10 +52,8 @@ print(arr2.dtype)
 # "COPY"
 import numpy as np
 ar1 = np.array(["chege","terminal","jesus",12,23,556,78])
-
 ar2 = ar1.copy()
 ar1[3] = "moon"
-
 print(ar1)
 print(ar2)
 # Note that the changes made on the original array does not affect the copy
@@ -69,14 +62,11 @@ print(ar2)
 # "VIEW"
 import numpy as np
 ar3 = np.array(["chege","terminal","jesus",12,23,556,78])
-
 ar4 = ar3.view()
 ar3[3] = "CRISTIANO"
-
 print(ar3)
 print(ar4)
 # Note that the changes made on the original array affects even the "view"
-
 # An array that owns the data returns the value "none" when the " base" is run 
 # and returns the original array if it does not won the data
 print(ar1.base) 
@@ -84,26 +74,21 @@ print(ar3.base)
 print(ar4.base)
 
 # Shape of an array refers to the number of elements in each dimension
-
 import numpy as np
 ar5 = np.array([1,2,3,4], ndmin=5)
 print(ar5)
-
 print("The shape of the",ar5,"is",ar5.shape)
 
 # Array reshaping
 # Reshape the below array into a 2D array
-
 ar6 = np.array([1,2,3,4,5,6])
 print(ar6)
 newarr = ar6.reshape(2,3)
 print(newarr)
 
 # Flattening an array "Reshaping into 1D array"
-
 ar7  = np.array([[1,2,3,4,5,11],[6,7,8,9,10,12]])
 print(ar7)
-
 newarr2 = ar7.reshape(-1)
 print(newarr2)
 
@@ -112,18 +97,41 @@ print(newarr2)
 import numpy as np
 ar8 = np.arange(10)
 print(ar8)
-
 for i in ar8:
     print(i)
-    i=i+1
     
 # ietrating over 2D array
-
 import numpy as np
 ar9 = np.array([[1,2,3,4,5],[6,7,8,9,10]])
-
 print(ar9)
-
 for i in ar9:
     print(i)
 
+
+# to print out the exact scalars of a 2D array 
+import numpy as np
+ar9 = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+for x in ar9:
+    for y in x:
+        print(y)
+
+# The simplest way of printing out the scalar values of the array using------> ".nditer()" function
+import numpy as np
+ar9 = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+for x in np.nditer(ar9):
+    print(x)
+
+#  To print out the exact values of a 3D array
+import numpy as np
+ar10 = np.array([[[1,2,3,4],[5,6,7,8]],[[9,10,11,12],[13,14,15,16]]])
+print(ar10.ndim) # Checking what dimension is the array
+for x in ar10:
+    for y in x:
+        for z in y:
+            print(z)
+            
+# The simplest way of printing out the scalar values of the array using------> ".nditer()" function
+import numpy as np
+ar10 = np.array([[[1,2,3,4],[5,6,7,8]],[[9,10,11,12],[13,14,15,16]]])
+for x in np.nditer(ar10):
+    print(x)
