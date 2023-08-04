@@ -279,3 +279,26 @@ import numpy as np
 arr = np.array([1, 3, 5, 7])
 x = np.searchsorted(arr, [2, 4, 6])
 print(x)
+
+# Sorting arrays
+# Sort the array:
+import numpy as np
+arr = np.array([3, 2, 0, 1])
+print(np.sort(arr))
+# Note: This method returns a copy of the array, leaving the original array unchanged.
+
+# Sort the array alphabetically:
+import numpy as np
+arr = np.array(['banana', 'cherry', 'apple'])
+print(np.sort(arr))
+
+# Sort a boolean array:
+import numpy as np
+arr = np.array([True, False, True])
+print(np.sort(arr))
+
+# Sort a 2-D array:
+import numpy as np
+arr = np.array([[3, 2, 4], [5, 0, 1]])
+print(np.sort(arr))
+
