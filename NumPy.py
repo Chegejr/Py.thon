@@ -135,3 +135,20 @@ import numpy as np
 ar10 = np.array([[[1,2,3,4],[5,6,7,8]],[[9,10,11,12],[13,14,15,16]]])
 for x in np.nditer(ar10):
     print(x)
+
+# Iterating the array with different datatypes using-------> "op_dtypes"
+# NumPy does not change the data type of the element in-place (where the element is in array) 
+# so it needs some other space to perform this action, that extra space is called buffer, 
+# and in order to enable it in nditer() we pass flags=['buffered']
+import numpy as np
+ar11 = np.array([1,2,3,4,5,6])
+for x in np.nditer(ar11,flags=['buffered'],op_dtypes=['S']):
+    print(x)
+
+# iterating by use of steps
+# iterate the below array skipping one element
+import numpy as np
+ar12 = np.array([1,2,3,4,5,6])
+for x in np.nditer(ar12[::2]):
+    print(x)
+
