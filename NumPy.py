@@ -82,3 +82,28 @@ print(ar4)
 print(ar1.base) 
 print(ar3.base)
 print(ar4.base)
+
+# Shape of an array refers to the number of elements in each dimension
+
+import numpy as np
+ar5 = np.array([1,2,3,4], ndmin=5)
+print(ar5)
+
+print("The shape of the",ar5,"is",ar5.shape)
+
+# Array reshaping
+# Reshape the below array into a 2D array
+
+ar6 = np.array([1,2,3,4,5,6])
+print(ar6)
+newarr = ar6.reshape(2,3)
+print(newarr)
+
+# Flattening an array "Reshaping into 1D array"
+
+ar7  = np.array([[1,2,3,4,5,11],[6,7,8,9,10,12]])
+print(ar7)
+
+newarr2 = ar7.reshape(-1)
+print(newarr2)
+
