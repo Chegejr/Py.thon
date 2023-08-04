@@ -163,3 +163,32 @@ import numpy as np
 arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
 for idx, x in np.ndenumerate(arr):
   print(idx, x)
+
+# # joining arrays
+# # 1. Using the concatenate function
+import numpy as np
+ar12 = np.array([1,2,3,4])
+ar13 = np.array([5,6,7,8])
+newarr12 = np.concatenate((ar12,ar13),axis=0)
+print(newarr12)
+
+# # Stcaking along the rows
+import numpy as np
+ar12 = np.array([1,2,3,4])
+ar13 = np.array([5,6,7,8])
+newarr12 = np.hstack((ar12,ar13))
+print(newarr12)
+
+# Stcaking along the columns
+import numpy as np
+ar12 = np.array([1,2,3,4])
+ar13 = np.array([5,6,7,8])
+newarr12 = np.vstack((ar12,ar13))
+print(newarr12)
+
+# Stcaking along the height or depth
+import numpy as np
+ar12 = np.array([1,2,3,4])
+ar13 = np.array([5,6,7,8])
+newarr12 = np.dstack((ar12,ar13))
+print(newarr12)
