@@ -107,3 +107,23 @@ print(ar7)
 newarr2 = ar7.reshape(-1)
 print(newarr2)
 
+#  iterating arrays -------> using basic python for loop
+# 1D array iteration
+import numpy as np
+ar8 = np.arange(10)
+print(ar8)
+
+for i in ar8:
+    print(i)
+    i=i+1
+    
+# ietrating over 2D array
+
+import numpy as np
+ar9 = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+
+print(ar9)
+
+for i in ar9:
+    print(i)
+
