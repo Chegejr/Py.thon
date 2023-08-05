@@ -1,4 +1,4 @@
-# like for loops, while loops are used to execute a certain boock of code or statements so long as the condtion holds
+# like for loops, while loops are used to execute a certain block of code or statements so long as the condtion holds
 # A program to print "Welcome All All All All"
 
 i = 1
