@@ -70,4 +70,22 @@ from numpy import random
 x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
 print(x)
 
+# Random Permutations of Elements
+# A permutation refers to an arrangement of elements. e.g. [3, 2, 1] is a permutation of [1, 2, 3] and vice-versa.
+# The NumPy Random module provides two methods for this: shuffle() and permutation().
+
+# Shuffling
+import numpy as np
+from numpy import random
+x= np.array([1,2,33,45,66,12])
+random.shuffle(x)#The shuffle() method makes changes to the original array.
+print(x)
+
+# Permutation
+import numpy as np
+from numpy import random
+x= np.array([1,2,33,45,66,12])
+print(random.permutation(x))#The permutation() method returns a re-arranged array (and leaves the original array un-changed).
+
+
 
