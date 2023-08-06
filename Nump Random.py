@@ -47,5 +47,27 @@ print("This is how array Y looks like",y)
 x = random.choice(y,size=(3,3))
 print("The random number generated from array Y is",x)
 
+# Random Data Distribution
+# Data Distribution is a list of all possible values, and how often each value occurs.
+# Such lists are important when working with statistics and data science.
+# The random module offer methods that returns randomly generated data distributions.
+# A random distribution is a set of random numbers that follow a certain probability density function.
+# Probability Density Function: A function that describes a continuous probability. i.e. probability of all values in an array.
+
+
+# Generate a 1-D array containing 100 values, where each value has to be 3, 5, 7 or 9.
+# The probability for the value to be 3 is set to be 0.1
+# The probability for the value to be 5 is set to be 0.3
+# The probability for the value to be 7 is set to be 0.6
+# The probability for the value to be 9 is set to be 0
+    
+from numpy import random
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
+print(x)
+
+# Same example as above, but return a 2-D array with 3 rows, each containing 5 values.
+from numpy import random
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
+print(x)
 
 
