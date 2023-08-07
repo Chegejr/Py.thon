@@ -134,3 +134,9 @@ from numpy import random
 x = random.poisson(5,100) # 5=lam and 100=size
 print(x)
 
+# uniform distribution
+# used where the chances of a certain event occuring is equal to the rest
+from numpy import random
+y = random.uniform(size=(3,3))
+print(y)
+
