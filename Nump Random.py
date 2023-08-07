@@ -136,6 +136,10 @@ print(x)
 
 # uniform distribution
 # used where the chances of a certain event occuring is equal to the rest
+# it takes three parameters i.e
+# a = lower bound
+# b = upper bound
+# size = shape of the returned array
 from numpy import random
 y = random.uniform(size=(3,3))
 print(y)
