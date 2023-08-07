@@ -350,3 +350,11 @@ newarr = arr[filter_arr]
 print(filter_arr)
 print(newarr)
 
+# Use f axis()
+import numpy as np
+x = np.array([[1,2,3,4],[5,6,7,8]])
+print(x)
+print(x.shape)
+
+print(x.sum(axis=0)) # adds the columns together and returns a new array
+print(x.sum(axis=1)) #adds the rows together and returns a new array
