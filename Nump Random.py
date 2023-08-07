@@ -197,3 +197,12 @@ print(y)
 from numpy import random
 y = random.rayleigh(scale=3,size=(2,3))
 print(y)
+
+# Pareto Distribution
+# A distribution following Pareto's law i.e. 80-20 distribution (20% factors cause 80% outcome).
+# takes in two parameters i.e
+# a = shape parameter
+# size = shape of the returned array
+from numpy import random
+y = random.pareto(a=3,size=(2,3))
+print(y)
