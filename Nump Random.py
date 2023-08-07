@@ -98,7 +98,6 @@ print(random.permutation(x))#The permutation() method returns a re-arranged arra
 # size - The shape of the returned array.
 
 # Generate a random normal distribution of size 2x3:
-
 from numpy import random
 x = random.normal(size=(2,3))
 print(x)
@@ -120,9 +119,18 @@ print(y)
 # Discrete Distribution:The distribution is defined at separate set of events,
 # e.g. a coin toss's result is discrete as it can be only head or tails whereas height of
 # people is continuous as it can be 170, 170.1, 170.11 and so on.
-
 from numpy import random
 x = random.binomial(n=5,p=0.5,size=12)
 print(x)
 # The main difference is that normal distribution is continous whereas binomial is discrete
+
+# poisson distribution
+# Poisson Distribution is a Discrete Distribution.
+# It estimates how many times an event can happen in a specified time. e.g. If someone eats twice a day what is the probability he will eat thrice?
+# It has two parameters
+# lam - rate or known number of occurrences e.g. 2 for above problem.
+# size - The shape of the returned arr
+from numpy import random
+x = random.poisson(5,100) # 5=lam and 100=size
+print(x)
 
