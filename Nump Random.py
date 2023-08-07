@@ -188,3 +188,12 @@ print(y)
 from numpy import random
 y = random.chisquare(df=3,size=(2,3))
 print(y)
+
+# Rayleigh distribution
+# used in signal processing
+# takes in two parameters i.e
+# scale = standard deviation "How flat the graph should be"
+# size = shape of the returned array
+from numpy import random
+y = random.rayleigh(scale=3,size=(2,3))
+print(y)
