@@ -154,3 +154,15 @@ from numpy import random
 y = random.logistic(loc=12,scale=7,size=(3,3))
 print(y)
 
+# Multinomila is a generalization of the binomial distribution
+# unlike binomial where the outcomes must be either of the two lets say heads or tails for toss of a coin,
+# multinomial takes events that has multiple outcomes lets rolling a dice where the number of of possible outcomes is 6
+
+# Example of rolling a dice
+# takes three parameters i.e
+# n = the number of possible outcomes
+# pvals = the probability that a single event occurs
+# size = shape of the returned array
+from numpy import random
+y = random.multinomial(n=6,pvals=(1/6,1/6,1/6,1/6,1/6,1/6),size=(3,3))
+print(y)
