@@ -168,3 +168,14 @@ y = random.multinomial(n=6,pvals=(1/6,1/6,1/6,1/6,1/6,1/6),size=(3,3))
 print(y)
 # Note: Multinomial samples will NOT produce a single value! They will produce one value for each pval.
 # Note: As they are generalization of binomial distribution their visual representation and similarity of normal distribution is same as that of multiple binomial distributions.
+
+# exponential distribution
+# Used to describe the time till the next occurence of an event
+# takes two parameters i.e
+# size = shape of the returned array
+# scale = inverse of rate
+# Draw out a sample for exponential distribution with 2.0 scale with 2x3 size:
+
+from numpy import random
+y = random.exponential(scale=2,size=(2,3))
+print(y)
