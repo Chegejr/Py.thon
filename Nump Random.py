@@ -179,3 +179,12 @@ print(y)
 from numpy import random
 y = random.exponential(scale=2,size=(2,3))
 print(y)
+
+# chi square distribution
+# Used to verify the hypothesis
+# takes in two parameters i.e
+# df = degree of freedom
+# size = shape of the returned array
+from numpy import random
+y = random.chisquare(df=3,size=(2,3))
+print(y)
