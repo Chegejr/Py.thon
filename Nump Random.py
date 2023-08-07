@@ -144,3 +144,13 @@ from numpy import random
 y = random.uniform(size=(3,3))
 print(y)
 
+# logistic distribution
+# ised to describe growth
+# takes three parameters i.e
+# loc = mean
+# scale = standard deviation
+# size = shape of the returned array
+from numpy import random
+y = random.logistic(loc=12,scale=7,size=(3,3))
+print(y)
+
