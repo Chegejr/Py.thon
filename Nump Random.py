@@ -166,3 +166,5 @@ print(y)
 from numpy import random
 y = random.multinomial(n=6,pvals=(1/6,1/6,1/6,1/6,1/6,1/6),size=(3,3))
 print(y)
+# Note: Multinomial samples will NOT produce a single value! They will produce one value for each pval.
+# Note: As they are generalization of binomial distribution their visual representation and similarity of normal distribution is same as that of multiple binomial distributions.
