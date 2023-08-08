@@ -107,3 +107,39 @@ import numpy as np
 arr1 = np.array([-15,32,-38,84,-59])
 arr3 = np.absolute(arr1) #If you replace the absolute with abs() the result is still the same but its advised to use absolute()
 print(arr3)
+
+# rounding decimals
+# there are basically five ways to round of decimal numbers in numpy i.e
+# floor = rounds off to the nearest lower integer
+# ceil = rounds off to the nearest upper interger
+# around = does the normal"obvious" rounding
+# fix = removes decimals 
+# truncation = removes decimals
+
+# Examples
+
+# truncate
+import numpy as np
+arr1 = np.array([23.22323,12.15151,6.988,123]) #output-------->[ 23.  12.   6. 123.]
+print(np.trunc(arr1))
+
+# fix
+import numpy as np
+arr1 = np.array([23.22323,12.15151,6.988,123]) #output-------->[ 23.  12.   6. 123.]
+print(np.fix(arr1))
+
+# floor
+import numpy as np
+arr1 = np.array([23.22323,12.15151,6.988,123]) #output-------->[ 23.  12.   6. 123.]
+print(np.floor(arr1))
+
+# ceil
+import numpy as np
+arr1 = np.array([23.22323,12.15151,6.988,123]) #output-------->[ 24.  13.   7. 123.]
+print(np.ceil(arr1))
+
+# around
+import numpy as np
+arr1 = np.array([23.22323,12.15151,6.988,123]) #output-------->[ 23.223  12.152   6.988 123.   ]
+print(np.around(arr1,3))
+
