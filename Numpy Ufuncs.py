@@ -48,3 +48,62 @@ import numpy as np
 add = np.frompyfunc(add,2,1)
 print(add(12,15))
     
+# checking if a function is a ufunc
+import numpy as np
+print(type(np.add))
+
+# simple arithmetic
+# addition
+import numpy as np
+arr1 = np.array([15,32,38,84,59])
+arr2 = np.array([10,20,30,40,50])
+arr3 = np.add(arr1,arr2)
+print(arr3)
+
+# subtraction
+import numpy as np
+arr1 = np.array([15,32,38,84,59])
+arr2 = np.array([10,20,30,40,50])
+arr3 = np.subtract(arr1,arr2)
+print(arr3)
+
+# multiplication
+import numpy as np
+arr1 = np.array([15,32,38,84,59])
+arr2 = np.array([10,20,30,40,50])
+arr3 = np.multiply(arr1,arr2)
+print(arr3)
+
+# divison
+import numpy as np
+arr1 = np.array([15,32,38,84,59])
+arr2 = np.array([10,20,30,40,50])
+arr3 = np.divide(arr1,arr2)
+print(arr3.round(3))#rounds the quotient to 3 decimal places
+
+# remainder
+import numpy as np
+arr1 = np.array([15,32,38,84,59])
+arr2 = np.array([10,20,30,40,50])
+arr3 = np.remainder(arr1,arr2) #if you replace the remainder() with mod() the result is still the same 
+print(arr3)
+
+# power
+import numpy as np
+arr1 = np.array([15,12,3,8,9])
+arr2 = np.array([2,3,6,4,5])
+arr3 = np.power(arr1,arr2)
+print(arr3)
+
+# quotient and remainder
+import numpy as np
+arr1 = np.array([15,32,38,84,59])
+arr2 = np.array([10,20,30,40,50])
+arr3 = np.divmod(arr1,arr2) #prints out two arrays, one for quotient and the other for remainder
+print(arr3)
+
+# absolute
+import numpy as np
+arr1 = np.array([-15,32,-38,84,-59])
+arr3 = np.absolute(arr1) #If you replace the absolute with abs() the result is still the same but its advised to use absolute()
+print(arr3)
