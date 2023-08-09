@@ -229,3 +229,16 @@ newarr = np.cumprod(arr2)
 print(newarr) #output--------> [  4  20 120]
 newarr = np.cumprod([arr1,arr2])
 print(newarr) #output--------> [  1   2   6  24 120 720]
+
+# Numpy discrete difference
+# discrete difference means subr=tracting successive elements
+import numpy as np
+arr1 = np.array([5,10,15,20,25,30])
+newarr = np.diff(arr1)
+print(newarr) # Output--------->[5 5 5 5 5]
+
+# We can also specify the number of times we want the subtraction to take place
+import numpy as np
+arr1 = np.array([5,10,15,20,25,30])
+newarr = np.diff(arr1,n=2)
+print(newarr) # 1st iteration of subtraction Output--------->[5 5 5 5 5]. 2nd iteration of subtraction Output--------->[0 0 0 0]
