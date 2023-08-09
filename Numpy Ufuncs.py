@@ -249,10 +249,3 @@ arr1 = np.arange(1,6)
 print(arr1) # Output-------> [1 2 3 4 5]
 newarr = np.gcd.reduce(arr1)
 print(newarr) # Output-------> 1
-
-
-import numpy as np
-
-x = np.sin(np.pi/2)
-
-print(x)
