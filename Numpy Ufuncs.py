@@ -143,3 +143,12 @@ import numpy as np
 arr1 = np.array([23.22323,12.15151,6.988,123]) #output-------->[ 23.223  12.152   6.988 123.   ]
 print(np.around(arr1,3))
 
+# log
+import numpy as np
+arr = np.arange(1,10)
+for i in arr:
+    print(i)
+newarr = np.log2(arr)    
+print(newarr)
+newarr1 = np.log10(arr)
+print(newarr1)
