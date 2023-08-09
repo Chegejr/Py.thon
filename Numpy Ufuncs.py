@@ -242,3 +242,10 @@ import numpy as np
 arr1 = np.array([5,10,15,20,25,30])
 newarr = np.diff(arr1,n=2)
 print(newarr) # 1st iteration of subtraction Output--------->[5 5 5 5 5]. 2nd iteration of subtraction Output--------->[0 0 0 0]
+
+# Numpy GCD Greatest common divisor
+import numpy as np
+arr1 = np.arange(1,6)
+print(arr1) # Output-------> [1 2 3 4 5]
+newarr = np.gcd.reduce(arr1)
+print(newarr) # Output-------> 1
