@@ -187,3 +187,10 @@ print("This is arr1",arr1) #output-------->[1 2 3 4 5]
 print("This is arr2",arr2) #output-------->[ 6  7  8  9 10]
 newarr = np.sum([arr1,arr2],axis=0) #output--------> [ 7  9 11 13 15] sums up the values column wise
 print(newarr)
+
+# Cummulative sum
+# cummulative sum means adding partial elements of the array .Below is how
+import numpy as np
+arr1 = np.arange(1,4) #output-------->[1 2 3]
+newarr = np.cumsum(arr1)
+print(newarr) #output-------->[1 3 6]
