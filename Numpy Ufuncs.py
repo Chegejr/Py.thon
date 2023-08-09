@@ -194,3 +194,38 @@ import numpy as np
 arr1 = np.arange(1,4) #output-------->[1 2 3]
 newarr = np.cumsum(arr1)
 print(newarr) #output-------->[1 3 6]
+
+# Numpy products
+import numpy as np
+arr1 = np.arange(1,4) #output-------->[1 2 3]
+arr2 = np.arange(4,7) #output-------->[4 5 6]
+newarr = np.prod(arr1)
+print(newarr) #output-------->[6]
+newarr = np.prod(arr2)
+print(newarr) #output-------->[120]
+newarr = np.prod([arr1,arr2])
+print(newarr) #output-------->[720]
+
+# product over the axis
+import numpy as np
+arr1 = np.arange(1,4) #output-------->[1 2 3]
+arr2 = np.arange(4,7) #output-------->[4 5 6]
+newarr = np.prod([arr1,arr2],axis=1) # product is done row wise when the axis is 1
+print(newarr) #output-------->[6 120] we have two answer values because the product is done row wise and we have two rows
+
+import numpy as np
+arr1 = np.arange(1,4) #output-------->[1 2 3]
+arr2 = np.arange(4,7) #output-------->[4 5 6]
+newarr = np.prod([arr1,arr2],axis=0) # product is done column wise when the axis is 0
+print(newarr) #output-------->[ 4 10 18] we have three answer values because the product is done column wise and we have three columns
+
+# cummmulative product
+import numpy as np
+arr1 = np.arange(1,4) #output-------->[1 2 3]
+arr2 = np.arange(4,7) #output-------->[4 5 6]
+newarr = np.cumprod(arr1)
+print(newarr) #output--------> [1 2 6]
+newarr = np.cumprod(arr2)
+print(newarr) #output--------> [  4  20 120]
+newarr = np.cumprod([arr1,arr2])
+print(newarr) #output--------> [  1   2   6  24 120 720]
