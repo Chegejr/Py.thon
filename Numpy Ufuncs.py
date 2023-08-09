@@ -152,3 +152,38 @@ newarr = np.log2(arr)
 print(newarr)
 newarr1 = np.log10(arr)
 print(newarr1)
+
+# Summations
+# The main difference between summation and addition is that addition is done between two arguments 
+# while summation is done between n elements
+
+# Example to illustrate the difference
+
+import numpy as np
+arr1 = np.arange(1,6)
+arr2 = np.arange(6,11)
+newarr = np.add(arr1,arr2) #output-------->[ 7  9 11 13 15]
+print(newarr)
+
+import numpy as np
+arr1 = np.arange(1,6)
+arr2 = np.arange(6,11)
+newarr = np.sum([arr1,arr2]) #output--------> 55
+print(newarr)
+
+# Summation on the axis
+import numpy as np
+arr1 = np.arange(1,6)
+arr2 = np.arange(6,11)
+print("This is arr1",arr1) #output-------->[1 2 3 4 5]
+print("This is arr2",arr2) #output-------->[ 6  7  8  9 10]
+newarr = np.sum([arr1,arr2],axis=1) #output--------> [15 40] sums up the values row wise
+print(newarr)
+
+import numpy as np
+arr1 = np.arange(1,6)
+arr2 = np.arange(6,11)
+print("This is arr1",arr1) #output-------->[1 2 3 4 5]
+print("This is arr2",arr2) #output-------->[ 6  7  8  9 10]
+newarr = np.sum([arr1,arr2],axis=0) #output--------> [ 7  9 11 13 15] sums up the values column wise
+print(newarr)
