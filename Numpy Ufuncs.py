@@ -277,3 +277,17 @@ base = 10
 height = 45
 hypotenuse = np.hypot(base,height)
 print(hypotenuse.round(4)) # Output---------> 46.0977
+
+# numpy hyperbolic functions
+# numpy provides the ufunc  i.e cosh(), sinh() and tanh() that take in radian values and produce the corresponding hyperbolic values
+import numpy as np
+arr1 = np.array([1.234,4.6474,8.5353,1.273])
+x = np.cosh(arr1)
+print(x) # Output---------> [1.86303380e+00 5.21615022e+01 2.54567943e+03 1.92577077e+00]
+
+# finding angles
+import numpy as np
+arr = np.array([0.1, 0.2, 0.5])
+x = np.arctanh(arr)
+print(x)  # Output---------> [0.10033535 0.20273255 0.54930614]
+
