@@ -249,3 +249,31 @@ arr1 = np.arange(1,6)
 print(arr1) # Output-------> [1 2 3 4 5]
 newarr = np.gcd.reduce(arr1)
 print(newarr) # Output-------> 1
+
+# Numpy Trigonometric Functions
+# Numpy provides the ufuncs i.e cos(), tan() and sin()
+# They take in values in radians form and produces the corresponding cos(), sin() or tan() depending on the request
+import numpy as np
+arr1 = np.array([np.pi/2,np.pi/3,np.pi/4,np.pi/5])
+print(arr1) # Output---------> [1.57079633 1.04719755 0.78539816 0.62831853]
+y = np.sin(arr1)
+print(y)  # Output---------> [1.         0.8660254  0.70710678 0.58778525]
+
+# Converting radians to degrees
+import numpy as np
+arr1 = np.array([np.pi/2,np.pi/3,np.pi/4,np.pi/5])
+y = np.rad2deg(arr1)
+print(y) # Output---------> [90. 60. 45. 36.]
+
+# Converting degrees to radians
+import numpy as np
+arr1 = np.array([124,78,98,345])
+y = np.deg2rad(arr1)
+print(y) # Output---------> [2.16420827 1.36135682 1.71042267 6.02138592] reconverting the output should give you the above degrees
+
+# Finding the hypotenuse
+import numpy as np
+base = 10
+Height = 45
+hypotenuse = np.hypot(base,Height)
+print(hypotenuse.round(4)) # Output---------> 46.0977
