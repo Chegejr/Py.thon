@@ -291,3 +291,42 @@ arr = np.array([0.1, 0.2, 0.5])
 x = np.arctanh(arr)
 print(x)  # Output---------> [0.10033535 0.20273255 0.54930614]
 
+# Numpy set operations
+# A set refers to a collection of unique values
+# Sets are used for operations involving frequent intersection, union and difference operations.
+import numpy as np
+set1 = np.array([1,1,5,6,8,2,3,4])
+x = np.unique(set1)
+print(x) # Output---------> [1 2 3 4 5 6 8] it omits the repeated elements in the array
+
+# finding union
+import numpy as np
+set1 = np.array([1,1,5,6,8,2,3,4])
+set2 = np.array([9,7,5,11,8,2,10,4])
+x = np.union1d(set1,set2)
+print(x) # Output---------> [ 1  2  3  4  5  6  7  8  9 10 11]
+
+# finding intersection "Values in both arrays"
+# Note: the intersect1d() method takes an optional argument assume_unique, which if set to True can speed up computation.
+# It should always be set to True when dealing with sets.
+import numpy as np
+set1 = np.array([1,1,5,6,8,2,3,4])
+set2 = np.array([9,7,5,11,8,2,10,4])
+x = np.intersect1d(set1,set2)
+print(x) # Output---------> [2 4 5 8]
+
+# finding the difference in sets
+# To find only the values in the first set that is NOT present in the seconds set, use the setdiff1d() method
+import numpy as np
+set1 = np.array([1,1,5,6,8,2,3,4])
+set2 = np.array([9,7,5,11,8,2,10,4])
+x = np.setdiff1d(set1,set2,assume_unique=True)
+print(x) # Output---------> [1 1 6 3]
+
+# finding symmetric difference
+# To find only the values that are NOT present in BOTH sets, use the setxor1d() method.
+import numpy as np
+set1 = np.array([1,1,5,6,8,2,3,4])
+set2 = np.array([9,7,5,11,8,2,10,4])
+x = np.setxor1d(set1,set2,assume_unique=True)
+print(x) # Output---------> [ 3  6  7  9 10 11]
