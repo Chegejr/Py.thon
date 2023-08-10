@@ -274,6 +274,6 @@ print(y) # Output---------> [2.16420827 1.36135682 1.71042267 6.02138592] reconv
 # Finding the hypotenuse
 import numpy as np
 base = 10
-Height = 45
-hypotenuse = np.hypot(base,Height)
+height = 45
+hypotenuse = np.hypot(base,height)
 print(hypotenuse.round(4)) # Output---------> 46.0977
