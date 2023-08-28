@@ -27,3 +27,25 @@ data = {
 }
 xplayers =pd.DataFrame(data, index=["messi","cristiano","kevo","szcobolszai","neymar"])
 print(xplayers)
+
+#  Reading data in a csv file. comma separated files
+#  Data in a csv file is stored in plaint readable text
+#  You can load a data from a csv file into a dataframe object by use of pd.read_csv("name of the file with .csv extension")
+#  Check for the maximum number rows the system is currently set at
+
+import pandas as pd
+print(pd.options.display.max_rows) #Output--------> 60
+data = pd.read_csv("data.csv") #loading the data in our csv file into the dataframe object
+print(data) # because our number of rows in our data is more(169) than the system set number of rows(60), 
+# the output will only be the first and last 5 rows of the dataframe
+
+print(data.to_string()) # we can print out the entire data in the dataframe using the to_string(),
+# function even when the number of system set number of rows is less(60) than the the data(169) in the dataframe
+
+# another way of printing out the entire table without using the to_string() function is by setting the number of
+#  system set rows to a number higher than the number of rows in the csv file lets say mayb 1000
+# Run the following 4 lines of code separately
+import pandas as pd
+pd.options.display.max_rows = 1000
+data = pd.read_csv("data.csv") 
+print(data)
