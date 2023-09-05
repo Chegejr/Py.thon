@@ -49,3 +49,90 @@ import pandas as pd
 pd.options.display.max_rows = 1000
 data = pd.read_csv("data.csv") 
 print(data)
+
+# Cleaning of empty or null values. 
+# one way of dealing with null values is removing the rows containing the null values
+# Use the "dropna()" to remove rows containing empty cells
+# Also, instead of deleting or removing the row(s) we can replace  them with values
+# this values can either be mean, max and or min
+import pandas as pd
+data = pd.read_csv("data.csv")
+print(pd.options.display.max_rows)
+pd.options.display.max_rows = 1000
+print(pd.options.display.max_rows)
+print(data)
+newdata = data.dropna() #by default the .dropna() returns a new dataframe and does not alter the original one
+print(newdata.to_string())
+# if by chance you dont want to return a new dataframe and want to make changes to the original datframe the set inplace value = true
+data.dropna(inplace=True) #removing rows with empty cells by making changes to the original dataframe
+print(data.to_string())
+# Cleaning of empty or null values. Use the "dropna()" to remove empty rows
+
+
+import pandas as pd
+# below is a player library dataset
+data = {
+    "Goals":{
+        "Pele":677,
+        "maradona":743,
+        "cantona":432,
+        "gaucho":333,
+        "messi":834,
+        "cristiano":850
+    },
+    "Assists":{
+        "Pele":89,
+        "maradona":112,
+        "cantona":56,
+        "gaucho":67,
+        "messi":432,
+        "cristiano":254
+    },
+    "Matches":{
+        "Pele":867,
+        "maradona":845,
+        "cantona":654,
+        "gaucho":340,
+        "messi":1012,
+        "cristiano":1115
+    },
+    "Age":{
+        "Pele":72,
+        "maradona":76,
+        "cantona":54,
+        "gaucho":45,
+        "messi":36,
+        "cristiano":37
+    },
+    "Scoring Frequency per min":{
+        "Pele":"",
+        "maradona":34,
+        "cantona":"",
+        "gaucho":23,
+        "messi":"",
+        "cristiano":8
+    }
+}
+playerlibrary = pd.DataFrame(data)#loading the dataset into a pandas dataframe object
+print(playerlibrary)# output below         
+"""
+          Goals  Assists  Matches  Age  Scoring Frequency per min
+Pele         677       89      867   72                         
+maradona     743      112      845   76                         34
+cantona      432       56      654   54                         
+gaucho       333       67      340   45                         23
+messi        834      432     1012   36                         
+cristiano    850      254     1115   37                          8
+"""
+# in my above created player dataframe i have the Nationality column with three empty cells
+# Empty cells or null values can potentially give you wrong output after analyzing therefore they should be dealt with
+# one way of dealing with empty cells or null values is through deleting or removing the rows containing the empty cells
+# use the .dropna() to remove rows containing empty cells
+# by default the .dropna() returns a new dataframe and does not alter the original one,
+# if by chance you dont want to return a new dataframe but instead alter the original one, set "inplace =True"
+playerlibrary.fillna("Brazil",inplace=True)
+print(playerlibrary)
+# also you can chose to replace the empty cells with the mean, median or mode of the column
+# Median-------->The value at the centre when the values are arranged in Ascending order
+# Mean---------->The average value "Add all values then divide by the number of values"
+# Mode---------->The most occuring value in the data set column
