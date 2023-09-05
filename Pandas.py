@@ -136,3 +136,31 @@ print(playerlibrary)
 # Median-------->The value at the centre when the values are arranged in Ascending order
 # Mean---------->The average value "Add all values then divide by the number of values"
 # Mode---------->The most occuring value in the data set column
+
+
+# Run the following 7 lines of code separately.----->May not run if you dont have the csv file 'data.csv'
+import pandas as pd
+data = pd.read_csv('data.csv') #Loading the data in the csv file into a Pandas dataframe object
+print(data.to_string()) #Printing out the entire dataset
+x = data["Calories"].mean() #Calculating the mean of the calories column
+print("The mean for the Calories column is:",x) #The mean is --------->375.79024390243904
+data["Calories"].fillna(x.round(4),inplace=True) #Replacing the empty cells in the "Calories column" with the mean
+print(data.to_string()) #checkout row "141" among other rows and note the empt or the null value "NaN" has been replaced by the mean(375.7902)
+
+# Run the following 7 lines of code separately.----->May not run if you dont have the csv file 'data.csv'
+import pandas as pd
+data = pd.read_csv('data.csv') #Loading the data in the csv file into a Pandas dataframe object
+print(data.to_string()) #Printing out the entire dataset
+x = data["Calories"].median() #Calculating the median of the calories column
+print("The median for the Calories column is:",x) #The median for the Calories column is: 318.6
+data["Calories"].fillna(x,inplace=True) #Replacing the empty cells in the "Calories column" with the median
+print(data.to_string()) #checkout row "141" among other rows and note the empty or the null cells "NaN" have been replaced by the median(318.6)
+
+# Run the following 7 lines of code separately.----->May not run if you dont have the csv file 'data.csv'
+import pandas as pd
+data = pd.read_csv('data.csv') #Loading the data in the csv file into a Pandas dataframe object
+print(data.to_string()) #Printing out the entire dataset
+x = data["Calories"].mode()[0] #Calculating the mode of the calories column
+print("The mode for the Calories column is:",x) #The mode for the Calories column is: 318.6
+data["Calories"].fillna(x,inplace=True) #Replacing the empty cells in the "Calories column" with the mode
+print(data.to_string()) #checkout row "141" among other rows and note the empty or the null cells "NaN" have been replaced by the mode(300.0)
