@@ -188,3 +188,15 @@ data = pd.read_csv("data.csv")
 print(data.duplicated) #checking if nour dataset has duplicates. returns a boolean value for every row
 # if there are any duplicates we have to remove them
 data.drop_duplicates(inplace=True)#removing duplicates
+
+import pandas as pd
+data = pd.read_csv('data.csv')
+print(data.corr()) #checking the relationship between the columns 
+"""
+          Duration     Pulse  Maxpulse  Calories
+Duration  1.000000 -0.155408  0.009403  0.922717
+Pulse    -0.155408  1.000000  0.786535  0.025121
+Maxpulse  0.009403  0.786535  1.000000  0.203813
+Calories  0.922717  0.025121  0.203813  1.000000
+"""
+# "Duration" and "Duration" has a perfect correlation which makes sense as a each column has a perfect relationship to itself
