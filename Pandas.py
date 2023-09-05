@@ -164,3 +164,27 @@ x = data["Calories"].mode()[0] #Calculating the mode of the calories column
 print("The mode for the Calories column is:",x) #The mode for the Calories column is: 318.6
 data["Calories"].fillna(x,inplace=True) #Replacing the empty cells in the "Calories column" with the mode
 print(data.to_string()) #checkout row "141" among other rows and note the empty or the null cells "NaN" have been replaced by the mode(300.0)
+
+# cleaning data of wrong format
+# there are only two ways to deal with dat of wrong format; tremove the rows containing wrong format or convert all the values in the column in one same format
+import pandas as pd
+data = pd.read_csv("data.csv")
+print(data.to_string())
+
+# dealing with wrong data
+# one is by replacing the wrong data by another value
+for x in data.index:
+    if data.loc[x,"Duration"]>120:
+        data.loc[x,"Duration"] = 120
+        
+# another way of dealing with wrong data is through removing them
+for x in data.index:
+    if data.loc[x,"Duration"] > 120:
+       data.drop(x,inplace=True)
+
+# dealing with duplicates
+import pandas as pd
+data = pd.read_csv("data.csv")
+print(data.duplicated) #checking if nour dataset has duplicates. returns a boolean value for every row
+# if there are any duplicates we have to remove them
+data.drop_duplicates(inplace=True)#removing duplicates
