@@ -13,3 +13,18 @@ Name = "Chege"
 Sur_name = "Waweru"
 
 print("Welcome "+ Name + " to Data Science road map: CodeBasics");
+
+# python string formating
+# we can use placeholders to hold where the value should be placed
+# the .format()
+intro = "My name is {}. Learning Data Science".format("chege") #Using an empty placeholder 
+print(intro) #Output------>My name is chege. Learning Data Science
+
+# also we can use index inside of the placeholders
+Player = "The best player in the world is {1} after {0}".format("Cristiano","Messi") #using index to fill in the placeholders
+print(Player)#Output------>The best player in the world is Messi after Cristiano
+
+# Also we can use named indexes
+favfruits = "I love {ffruit},{sfruit} but most of the times i prefer {tfruit}"
+print(favfruits.format(ffruit="Apple",sfruit="Mango",tfruit="Pineapple"))#Output------>I love Apple,Mango but most of the times i prefer Pineapple
+
