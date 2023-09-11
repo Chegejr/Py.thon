@@ -89,3 +89,30 @@ print(players) # Output------->['Messi', 'Maradona', 'Cristiano']
 
 players.pop() # Removes the last item in the list "Cristiano"
 print(players) # Output------->['Messi', 'Maradona']
+
+# Looping through a list
+countries = ["Mexico","Argentina","Brazil","Portugal","Swaziland","South Africa"]
+for i in range(len(countries)):
+    if countries[i] == "Swaziland":
+        print("Africana")
+    elif countries[i] == "South Africa":
+        print("Africana")
+    elif countries[i] == "Mexico":
+        print("Europe")
+    elif countries[i] == "Brazil":
+        print("Europe")
+    elif countries[i] == "Argentina":
+        print("Europe")
+    elif countries[i] == "Portugal":
+        print("Europe")
+    else:
+        print("Unknown")
+
+#  Looping through a list using a while loop
+countries = ["Mexico","Argentina","Brazil","Portugal","Swaziland","South Africa"]
+print(len(countries))
+x = 0
+
+while x < len(countries):
+    print(countries[x])
+    x += 1
