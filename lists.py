@@ -40,3 +40,43 @@ print("bread" in Shopping_list);
 print("milk" in Shopping_list);
 print("ethanol" in Shopping_list);
 
+# changing the item through indexing
+myfamily = ["Paps","Moms","Jane","Mercy","Mary","Wayne","Maggy"]
+myfamily[4]= "Moon"
+print(myfamily[4]) #output------->Moon
+
+# Note: The length of the list will change when the number of items inserted does not match the number of items replaced.
+# If you insert less items than you want to replace, the new items will be inserted where you specified, and the remaining items will move accordingly:
+thislist = ["apple", "banana", "cherry"]
+thislist[1:3] = ["watermelon"]
+print(thislist) #Output------->['apple', 'watermelon']
+
+# Appending another list to another list we use the ".extend" method
+parents = ["Moms","Paps"]
+kids = ["jane","Mercy","Moon","Mary","Maggy"]
+parents.extend(kids)
+goodFamily = parents
+print(goodFamily) #Output------>['Moms', 'Paps', 'jane', 'Mercy', 'Moon', 'Mary', 'Maggy']
+
+# You cannot only append a list to another list but yuh can append a tuple, set, dictionary to a list by use of the ".extend" method
+Age = (27,34,43) # A Tuple
+goodFamily.extend(Age)
+print(goodFamily) #OUtput------->['Moms', 'Paps', 'jane', 'Mercy', 'Moon', 'Mary', 'Maggy', 27, 34, 43]
+
+# Removing items in a list
+# ".remove" removes  a specified item in the list and takes one argument therefore yuh can only remove one item at a time
+fruits = ["Apple","Guava","Mango","orange"]
+print(fruits) #Output------->['Apple', 'Guava', 'Mango', 'orange']
+fruits.remove("Mango")
+print(fruits) # Output------>['Apple', 'Guava', 'orange']
+
+# Yuh can also delete an item from the list or even delete the entire list using "del" keyword
+del fruits[0]
+print(fruits) #Output------->['Guava', 'orange']
+del fruits #Deletes the entire list
+
+# We can also clear the entire list. This leaves an empty list
+players = ["Messi","Pele","Maradona","Cristiano"]
+print(players) # Output------->['Messi', 'Pele', 'Maradona', 'Cristiano']
+players.clear()
+print(players) # Output-------->[]
