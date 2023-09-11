@@ -80,3 +80,12 @@ players = ["Messi","Pele","Maradona","Cristiano"]
 print(players) # Output------->['Messi', 'Pele', 'Maradona', 'Cristiano']
 players.clear()
 print(players) # Output-------->[]
+
+# use of pop()
+# pop removes the last item in the list if no item is specified
+players = ["Messi","Pele","Maradona","Cristiano"]
+players.pop(1) #removes the second item in the list "pele"
+print(players) # Output------->['Messi', 'Maradona', 'Cristiano']
+
+players.pop() # Removes the last item in the list "Cristiano"
+print(players) # Output------->['Messi', 'Maradona']
