@@ -120,3 +120,24 @@ while x < len(countries):
 # printing items in a list using a short hand for loop
 fruits = ["Guava","Apple","Orange","Ovacado"]
 [print(x) for x in fruits]
+
+# sorting a list alphanumerically
+age = [12,13,445,66,34,89,77,1,53]
+age.sort()
+print(age) #Output-------->[1, 12, 13, 34, 53, 66, 77, 89, 445]
+
+# sorting a list
+names = ["Me","you","us","moon"]
+names.sort()
+print(names)#Output-------->['Me', 'moon', 'us', 'you']
+
+# Sorting the list in  a descending order
+age = [12,13,445,66,34,89,77,1,53]
+age.sort(reverse=True)
+print(age)#Output-------->[445, 89, 77, 66, 53, 34, 13, 12, 1]
+
+# sorting a list
+names = ["Me","you","us","moon"]
+names.sort(reverse=True)
+print(names)#Output-------->['you', 'us', 'moon', 'Me']
+
