@@ -37,10 +37,27 @@ tuple4 = tuple(jr); # reconverting our list back to tuple
 print(type(tuple4)); # Output-------> <class 'tuple'>
 print(tuple4); # Output-------> ('Arsenal', 'Me', 56, 'Anorld', 'Guava', 'junior')
 
+
+tuple2 = ("Chege", "Menengai", 89, ("Einstein", 78, "Ugali"));
+tuple4 = ("Arsenal", "Me", 56, "Anorld", "Guava")
 # Manipulating tuples using "For Loops"
 for x in (tuple2):
-    print(x);
+    print(x); # Output-------> 
+    """
+Chege
+Menengai
+89
+('Einstein', 78, 'Ugali')
+    """
     
 for y in tuple4:
-    print(y);
+    print(y); # Output------->
+    """
+Arsenal
+Me
+56
+Anorld
+Guava
+    """
+    
 
