@@ -59,5 +59,32 @@ Me
 Anorld
 Guava
     """
-    
+# Accessing items of a tuple
+# Items of atuple can be accesed through indexing
+countries =("Croatia","Belgium","Sweden","England","Slovenia")
+print(countries[1]) # Prints out the second item in the tuple. Output--------> Belgium
+
+# Accessing the items using the range of index
+countries =("Croatia","Belgium","Sweden","England","Slovenia")
+print(countries[2:5]) # Prints the item s from the index 2 to index 4. index 5 is not included. Output-------> ('Sweden', 'England', 'Slovenia')
+
+# negative indexing in range
+countries =("Croatia","Belgium","Sweden","England","Slovenia")
+print(countries[-4:-1])  # Output------> ('Belgium', 'Sweden', 'England')
+
+# if the starting index is not provided the listing starts from the first one at index 0
+countries =("Croatia","Belgium","Sweden","England","Slovenia")
+print(countries[:-1]) #  Starts from the frst item to the second last item. Output------> ('Croatia', 'Belgium', 'Sweden', 'England')
+
+# if the ending index is not provided the listing is done from the specified starting index to the last
+countries =("Croatia","Belgium","Sweden","England","Slovenia")
+print(countries[1:]) # Output---------> ('Belgium', 'Sweden', 'England', 'Slovenia'). starts from index one"Belgium" to the last "Slovenia"
+
+# checing if a certain item exists in a given tuple
+countries =("Croatia","Belgium","Sweden","England","Slovenia")
+if "slovenia" in countries:
+    print("The country 'Slovenia' is in countries")
+else:
+    print("Not found in countries")
+#  Output-------> The country 'Slovenia' is in countries. becuase our country slovenia with a small letter "S" is not in our countries tuple
 
