@@ -157,3 +157,23 @@ print(list1) # Output------>['Nakuru', 'Mombasa', 'Taita taveta', 'kisumu']
 games = ["football","hockey","baseball","tennis"]
 list2 = list(games)
 print(list2)# Output------>['football', 'hockey', 'baseball', 'tennis']
+
+# python join lists
+# we can concatenate lists  by doing the following
+# First approach
+listX = ["Messi","Ronaldo","Perisic"]
+listY = [12,"Juan",23,"Arnold"]
+listZ = listX + listY 
+print(listZ) # Output------->['Messi', 'Ronaldo', 'Perisic', 12, 'Juan', 23, 'Arnold']
+
+# Second approach. Using a for loop
+for x in listX:
+    listY.append(x)
+print(listY) # Output------->[12, 'Juan', 23, 'Arnold', 'Messi', 'Ronaldo', 'Perisic']
+
+# Third approach. Using the".extend method
+players = ["me","you","us"]
+goals = [23,17,40]
+players.extend(goals)
+print(players)# Output------->['me', 'you', 'us', 23, 17, 40]
+
