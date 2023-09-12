@@ -116,3 +116,7 @@ x = 0
 while x < len(countries):
     print(countries[x])
     x += 1
+
+# printing items in a list using a short hand for loop
+fruits = ["Guava","Apple","Orange","Ovacado"]
+[print(x) for x in fruits]
