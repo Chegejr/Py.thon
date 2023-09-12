@@ -146,3 +146,14 @@ print(names)#Output-------->['you', 'us', 'moon', 'Me']
 Players = ["pele","Messi","Maradona","zidane","Cristiano"]
 Players.sort(key=str.lower)
 print(Players) # Output------->'Cristiano', 'Maradona', 'Messi', 'pele', 'zidane']
+
+# Yuh cannot simply copy a list by coding "list 1 = list 2" because changes made in list 2 will also reflect on the copy
+# we can a copy a list by simply using the copy()
+counties =["Nakuru","Mombasa","Taita taveta", "kisumu"]
+list1= counties.copy()
+print(list1) # Output------>['Nakuru', 'Mombasa', 'Taita taveta', 'kisumu']
+
+# Also we can copy a list by use of list
+games = ["football","hockey","baseball","tennis"]
+list2 = list(games)
+print(list2)# Output------>['football', 'hockey', 'baseball', 'tennis']
