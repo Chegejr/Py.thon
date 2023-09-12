@@ -20,27 +20,22 @@ print((Tuple1).count("Ugali")); # Counts how many times a specified item appears
 print(type(Tuple1)); # Checking if indeed what we have is a tuple.  # Output--------> <class 'tuple'>
 tuple3  = print(("Ugali, ")* 4);  # Output--------> Ugali, Ugali, Ugali, Ugali,
 
-# Appending an item into  an already existing tuple
-c = list(tuple2);
-c.append("Added");
-tuple2 = tuple(c);
-print(tuple2);
 
-# Secoond example of appending an element to a tuple by first changing it into a list and back to tuple
+#  example of appending an element to a tuple by first changing the tuple into a list and back to tuple
+# we first convert the tuple into a list beacuse  a tuple does not allow any modification once created compared to list
 tuple4 = ("Arsenal", "Me", 56, "Anorld", "Guava")
-print(tuple4);
-print(type(tuple4));
+print(tuple4); # Output-------> ('Arsenal', 'Me', 56, 'Anorld', 'Guava')
+print(type(tuple4)); # Output-------> <class 'tuple'>
 
+jr = list(tuple4); # converting the tuple into  a list
+print(jr); # Output-------> ['Arsenal', 'Me', 56, 'Anorld', 'Guava']
+print(type(jr)); # Output-------> <class 'list'>. Our tuple is now a list
+jr.append("junior"); # appending the new item to our newly converted list
+print(jr) # Output-------> ['Arsenal', 'Me', 56, 'Anorld', 'Guava', 'junior']
 
-jr = list(tuple4);
-print(jr);
-print(type(jr));
-jr.append("junior");
-print(jr)
-
-tuple4 = tuple(jr);
-print(type(tuple4));
-print(tuple4);
+tuple4 = tuple(jr); # reconverting our list back to tuple
+print(type(tuple4)); # Output-------> <class 'tuple'>
+print(tuple4); # Output-------> ('Arsenal', 'Me', 56, 'Anorld', 'Guava', 'junior')
 
 # Manipulating tuples using "For Loops"
 for x in (tuple2):
