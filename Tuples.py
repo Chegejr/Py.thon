@@ -9,9 +9,9 @@ Tuples also allow duplicate elements as in lists
 Tuple1 = ("Future", 21, "Mia", "Ugali", "Banana", "Ugali", 78);
 tuple2 = ("Chege", "Menengai", 89, ("Einstein", 78, "Ugali"));
 
-print(Tuple1); #prints contents of tuple1
-print(tuple2); # Prints out the contents of tuple2  
-print(Tuple1 + tuple2); # Tuple concatenation
+print(Tuple1); # Output-------->('Future', 21, 'Mia', 'Ugali', 'Banana', 'Ugali', 78)
+print(tuple2); # Output-------->('Chege', 'Menengai', 89, ('Einstein', 78, 'Ugali'))
+print(Tuple1 + tuple2); # Output-------->('Future', 21, 'Mia', 'Ugali', 'Banana', 'Ugali', 78, 'Chege', 'Menengai', 89, ('Einstein', 78, 'Ugali'))
 
 print(Tuple1[0]); # Tuple slicing
 print(tuple2[-1][2]); # Tuple slicing a tuple inside another tuple
