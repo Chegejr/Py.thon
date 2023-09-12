@@ -141,3 +141,8 @@ names = ["Me","you","us","moon"]
 names.sort(reverse=True)
 print(names)#Output-------->['you', 'us', 'moon', 'Me']
 
+# Nomarlly the sort function is case sensitive making sorting to sort the Upper case words first then lower case
+# to have a case insensitive sort use the "key=str.lower"
+Players = ["pele","Messi","Maradona","zidane","Cristiano"]
+Players.sort(key=str.lower)
+print(Players) # Output------->'Cristiano', 'Maradona', 'Messi', 'pele', 'zidane']
