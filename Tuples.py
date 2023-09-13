@@ -59,6 +59,23 @@ Me
 Anorld
 Guava
     """
+
+# loop through a tuple by use of index
+players = ("Messi","Cristiano","Jota","Neves","Fernandes","Felix","Pele","Zidane")
+for x in range(len(players)):
+    print(players[x])
+# Output------->
+"""
+Messi
+Cristiano
+Jota
+Neves
+Fernandes
+Felix
+Pele
+Zidane
+"""
+
 # Accessing items of a tuple
 # Items of atuple can be accesed through indexing
 countries =("Croatia","Belgium","Sweden","England","Slovenia")
