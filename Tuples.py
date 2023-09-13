@@ -88,3 +88,29 @@ else:
     print("Not found in countries")
 #  Output-------> The country 'Slovenia' is in countries. becuase our country slovenia with a small letter "S" is not in our countries tuple
 
+# python unpacking Tuples
+#  when we create a tuple and assign values to it, that is packing a tuple
+#  Python alllows us to unpack the same packed values back to variables 
+players = ("Messi","Pele","Zidane")
+moon,star,universe = players
+print(moon) # Output------> Messi
+print(star) # Output------> Pele
+print(universe) # Output------> Zidane
+
+# if by chance yuh happen to have an instance where the number of variables is less than the number of values use an asterisk "*"
+# the rest of the values will be unpacked into one variable as a list
+players = ("Messi","Pele","Zidane","Cristiano","Jota","Neves","Fernandes","Felix")
+Argentina,Brazil,France,*Portugal = players
+print("Argentina have",Argentina) # Output------> Argentina have Messi
+print("Brazil have",Brazil) # Output------> Brazil have Pele
+print("France have",France) # Output------> France have Zidane
+print("Portugal have",Portugal) # Output------> Portugal have ['Cristiano', 'Jota', 'Neves', 'Fernandes', 'Felix']
+
+# its not a must that the asterisk be at the last variable
+# it can also be on any other variable so long as it picks the right values accordingly
+players = ("Messi","Cristiano","Jota","Neves","Fernandes","Felix","Pele","Zidane")
+Argentina,*Portugal,Brazil,France = players
+print("Argentina have",Argentina) # Output------> Argentina have Messi
+print("Brazil have",Brazil) # Output------> Brazil have Pele
+print("France have",France) # Output------> France have Zidane
+print("Portugal have",Portugal) # Output------> Portugal have ['Cristiano', 'Jota', 'Neves', 'Fernandes', 'Felix']
