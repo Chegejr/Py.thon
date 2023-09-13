@@ -157,3 +157,8 @@ print(tuple3) # Output-----> ('Nakuru', 'Mombasa', 'Kisumu', 'Nairobi', 187, 453
 #  Also we can multiply tuples
 places = ("Nakuru","Mombasa","Kisumu","Nairobi")
 print(places*2) # Output-----> ('Nakuru', 'Mombasa', 'Kisumu', 'Nairobi', 'Nakuru', 'Mombasa', 'Kisumu', 'Nairobi')
+
+# Two main tuple methods are used as follows
+musicians = ("Beyonce","Jay-Z","Eminem","Fetty Wap","Imagine Dragons","21 Pilots","Sia")
+print(musicians.index("Sia")) # Locates the item in the tuple and returns the index where it is located. Output--------> 6
+print(musicians.count("Sia")) # Counts the number of times a specified value "Sia" appears in the tuple. Output--------> 1
