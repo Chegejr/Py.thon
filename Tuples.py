@@ -131,3 +131,20 @@ print("Argentina have",Argentina) # Output------> Argentina have Messi
 print("Brazil have",Brazil) # Output------> Brazil have Pele
 print("France have",France) # Output------> France have Zidane
 print("Portugal have",Portugal) # Output------> Portugal have ['Cristiano', 'Jota', 'Neves', 'Fernandes', 'Felix']
+
+# looping through a tuple using  a while loop
+musicians = ("Beyonce","Jay-Z","Eminem","Fetty Wap","Imagine Dragons","21 Pilots","Sia")
+x = 0
+while x < len(musicians):
+    print(musicians[x])
+    x +=1 # When using a while loop rememmber to increment the the condition value by 1 any time the loop makes one complete loop
+"""
+Beyonce
+Jay-Z
+Eminem
+Fetty Wap
+Imagine Dragons
+21 Pilots
+Sia
+"""
+
