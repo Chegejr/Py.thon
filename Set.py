@@ -29,3 +29,12 @@ print(names) # Output-----> {'moon', 'waweru', 'josiah', 'chege'}
 names.remove("waweru")
 print(names) # Output-----> {'josiah', 'moon', 'chege'}
 
+
+names = {"me","you","us"}
+luckynumber = {12,23,11}
+names.update(luckynumber) #  we can the add the items of another set by use of the ".update" method
+print(names) # Output-----> {23, 11, 'you', 12, 'me', 'us'}
+
+networth = [12,23,33]
+names.update(networth) #  we can join a set by any other iterable
+print(names) # Output-----> {33, 'me', 23, 'us', 11, 'you', 12}
