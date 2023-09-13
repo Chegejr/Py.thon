@@ -38,3 +38,23 @@ print(names) # Output-----> {23, 11, 'you', 12, 'me', 'us'}
 networth = [12,23,33]
 names.update(networth) #  we can join a set by any other iterable
 print(names) # Output-----> {33, 'me', 23, 'us', 11, 'you', 12}
+
+#  Joining sets
+counties = {"Nakuru", "Nairobi"}
+leaders = {"Kihika","Sakaja"}
+countyGov = counties.union(leaders) # Joining two sets
+print(countyGov) # Output-----> {'Nairobi', 'Nakuru', 'Kihika', 'Sakaja'}
+
+#  Use of intersecion_update method
+#  returns items that are present in both sets
+set1 = {"apple",23,True,"Moon","cherry","chege"}
+set2 = {"messi","23",23,True,"apple"}
+set1.intersection_update(set2)
+print(set1) # Output------> {True, 'apple', 23}
+
+#  Use of symmetric_difference
+set1 = {"apple",23,True,"Moon","cherry","chege"}
+set2 = {"messi","23",23,True,"apple"}
+set1.symmetric_difference(set2)
+print(set1) # Output-------> {'chege', True, 'apple', 'cherry', 23, 'Moon'}
+
