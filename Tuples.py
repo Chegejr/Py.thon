@@ -148,3 +148,12 @@ Imagine Dragons
 Sia
 """
 
+# just like lists we can join two tuples together to get one tuple
+places = ("Nakuru","Mombasa","Kisumu","Nairobi")
+distanceMph = (187,453,357,156)
+tuple3 = places +distanceMph
+print(tuple3) # Output-----> ('Nakuru', 'Mombasa', 'Kisumu', 'Nairobi', 187, 453, 357, 156)
+
+#  Also we can multiply tuples
+places = ("Nakuru","Mombasa","Kisumu","Nairobi")
+print(places*2) # Output-----> ('Nakuru', 'Mombasa', 'Kisumu', 'Nairobi', 'Nakuru', 'Mombasa', 'Kisumu', 'Nairobi')
