@@ -65,3 +65,36 @@ Geo 84
 Dynamics 94
 Electricity 83
 """
+# When using the dictionary we can update the dictionary by use of the ".update()" method
+colorIntensity = {
+    "Red":45,
+    "Green":33,
+    "Blue":27
+}
+colorIntensity.update({"Yellow":45})
+print(colorIntensity) # OUtput------> {'Red': 45, 'Green': 33, 'Blue': 27, 'Yellow': 45}
+
+# We also have the pop() method which removes a specified item
+colorIntensity.pop("Red")
+print(colorIntensity) # OUtput------> {'Green': 33, 'Blue': 27, 'Yellow': 45}
+
+# Also we have the .popitem() which removes the lastly inserted item which in our case is "Yellow"
+colorIntensity.popitem()
+print(colorIntensity) # OUtput------> {'Green': 33, 'Blue': 27}
+
+#  the del can del the entire dictionary or a specified key and its value 
+del colorIntensity["Blue"]
+print(colorIntensity) # OUtput------> {'Green': 33}
+# or even the entire dictionary
+del colorIntensity
+# print(colorIntensity) # Error! Output------> NameError: name 'colorIntensity' is not defined
+
+cars = {
+    "Benzo":211,
+    "Mustang":964,
+    "Chev":233
+}
+# Also we can empty the entire dictionary by use of the clear method
+cars.clear()
+print(cars) # Output-----> {}
+
