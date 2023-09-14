@@ -98,3 +98,22 @@ cars = {
 cars.clear()
 print(cars) # Output-----> {}
 
+# Making copies of a dictionary
+# One way is the use of the .copy() method
+cars = {
+    "Benzo":211,
+    "Mustang":964,
+    "Chev":233
+}
+
+newcars = cars.copy()
+print(newcars) # Output-------> {'Benzo': 211, 'Mustang': 964, 'Chev': 233}
+
+# Another way is the use of dict keyword
+brandnew = dict(cars)
+print(brandnew) # Output-------> {'Benzo': 211, 'Mustang': 964, 'Chev': 233}
+
+cars.update({"Mazda":233})
+print(cars) # Output------> {'Benzo': 211, 'Mustang': 964, 'Chev': 233, 'Mazda': 233}
+print(newcars) # Output------>  {'Benzo': 211, 'Mustang': 964, 'Chev': 233} .Note that the copies do not get updated when there are changes in the original dictionary
+print(brandnew) # Output------>  {'Benzo': 211, 'Mustang': 964, 'Chev': 233}
