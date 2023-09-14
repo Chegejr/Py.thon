@@ -34,20 +34,34 @@ del(Exam_results["Science"]);
 print(Exam_results); # Output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83, 'History': 96}
 Exam_results.pop("History");
 print(Exam_results); # Output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83}
-
 # Printing out the keys of the dictionary
-print(Exam_results.keys());
+Exam_results = {"Maths": 87, "Eng" : 78, "Geo" : 84, "Dynamics" : 94, "Electricity" : 83};
+print(Exam_results.keys()); # Output-----> dict_keys(['Maths', 'Eng', 'Geo', 'Dynamics', 'Electricity'])
 
 # printing the values of the dictionary
-print(Exam_results.values());
+print(Exam_results.values()); # Output------> dict_values([87, 78, 84, 94, 83])
 
 # Printing out the items of the dictionary
-print(Exam_results.items());
+print(Exam_results.items()); # Output-----> dict_items([('Maths', 87), ('Eng', 78), ('Geo', 84), ('Dynamics', 94), ('Electricity', 83)])
 
 # Manipulating dictionary using for loops
 for x in Exam_results:
-    print(x);
+    print(x); # Output----->
+    """
+Maths
+Eng
+Geo
+Dynamics
+Electricity
+    """
     
 # Generating both keys and their corresponding values using for loops
 for x,y in Exam_results.items():
-    print(x,y);
+    print(x,y); # Output----->
+"""
+Maths 87
+Eng 78
+Geo 84
+Dynamics 94
+Electricity 83
+"""
