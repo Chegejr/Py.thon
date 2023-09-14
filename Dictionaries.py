@@ -8,57 +8,49 @@ Elements of a dictionary cannot be accessed using indexing method.
 
 """
 Exam_results = {"Maths": 87, "Eng" : 78, "Geo" : 84, "Dynamics" : 94, "Electricity" : 83};
-print("My exam results are as follows: ",Exam_results);
+print("My exam results are as follows: ",Exam_results); # Output------> My exam results are as follows:  {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83}
 
 # Accessing the elements of a dictionary
-
-print("My Maths score is, ", Exam_results["Maths"]);
+print("My Maths score is, ", Exam_results["Maths"]); # output------> My Maths score is,  87
 
 # Also we i can use the "get()" method to access elements of the dictionary
-
-print("My score in Maths is, ", Exam_results.get("Maths"));
+print("My score in Maths is, ", Exam_results.get("Maths")); # output------> My score in Maths is,  87
 
 # Adding an element in a dictionary
+Exam_results["Science"] = 88;
+print(Exam_results); # output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83, 'Science': 88}
 
+# Adding an element in a dictionary
 Exam_results["Science"] = 88;
 print(Exam_results);
 
 # Also, i can add an element in the dictionary using the ".update" method
-
 Exam_results.update([("History", 94)]);
 print(Exam_results);
 
 # Updating the elements of a dictionary
-
 Exam_results["History"]= 96;
 print(Exam_results);
 
 # Removing an element from a dictionary
-
 del(Exam_results["Science"]);
 print(Exam_results);
-
 Exam_results.pop("History");
 print(Exam_results);
 
 # Printing out the keys of the dictionary
-
 print(Exam_results.keys());
 
 # printing the values of the dictionary
-
 print(Exam_results.values());
 
 # Printing out the items of the dictionary
-
 print(Exam_results.items());
 
 # Manipulating dictionary using for loops
-
 for x in Exam_results:
     print(x);
     
 # Generating both keys and their corresponding values using for loops
-
 for x,y in Exam_results.items():
     print(x,y);
