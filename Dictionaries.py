@@ -16,27 +16,24 @@ print("My Maths score is, ", Exam_results["Maths"]); # output------> My Maths sc
 # Also we i can use the "get()" method to access elements of the dictionary
 print("My score in Maths is, ", Exam_results.get("Maths")); # output------> My score in Maths is,  87
 
+Exam_results = {"Maths": 87, "Eng" : 78, "Geo" : 84, "Dynamics" : 94, "Electricity" : 83};
 # Adding an element in a dictionary
 Exam_results["Science"] = 88;
-print(Exam_results); # output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83, 'Science': 88}
-
-# Adding an element in a dictionary
-Exam_results["Science"] = 88;
-print(Exam_results);
+print(Exam_results); # Output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83, 'Science': 88}
 
 # Also, i can add an element in the dictionary using the ".update" method
 Exam_results.update([("History", 94)]);
-print(Exam_results);
+print(Exam_results); # Output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83, 'Science': 88, 'History': 94}
 
 # Updating the elements of a dictionary
 Exam_results["History"]= 96;
-print(Exam_results);
+print(Exam_results); # Output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83, 'Science': 88, 'History': 96}
 
 # Removing an element from a dictionary
 del(Exam_results["Science"]);
-print(Exam_results);
+print(Exam_results); # Output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83, 'History': 96}
 Exam_results.pop("History");
-print(Exam_results);
+print(Exam_results); # Output------> {'Maths': 87, 'Eng': 78, 'Geo': 84, 'Dynamics': 94, 'Electricity': 83}
 
 # Printing out the keys of the dictionary
 print(Exam_results.keys());
