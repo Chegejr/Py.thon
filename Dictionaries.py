@@ -117,3 +117,37 @@ cars.update({"Mazda":233})
 print(cars) # Output------> {'Benzo': 211, 'Mustang': 964, 'Chev': 233, 'Mazda': 233}
 print(newcars) # Output------>  {'Benzo': 211, 'Mustang': 964, 'Chev': 233} .Note that the copies do not get updated when there are changes in the original dictionary
 print(brandnew) # Output------>  {'Benzo': 211, 'Mustang': 964, 'Chev': 233}
+
+# tranquilo amigos----------> Calm down frinds
+#  We can have nested dictionaries as well
+cars = {
+    "Mercedes":{
+    "Model":"A-Class",
+    "Make":"Mercedes Benz",
+    "Year":2022
+    },
+    "Ford":{
+    "Model":"Mustang",
+    "Make":"Ford",
+    "Year":2024
+    },
+    "Lamborghini":{
+    "Model":"Aventador",
+    "Make":"Lamborghini",
+    "Year":2022
+    },
+    "Bentley":{
+    "Model":"Bentayga",
+    "Make":"Bentley",
+    "Year":2023
+    }
+}
+
+print(cars["Ford"]) # Output------> {'Model': 'Mustang', 'Make': 'Ford', 'Year': 2024}
+
+
+
+
+
+
+
