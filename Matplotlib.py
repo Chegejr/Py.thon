@@ -52,3 +52,21 @@ import numpy as np
 apoints = np.array([2,7,6,8,10,4]) # the points provided by the pyplot are {0 1 2 3 4 5}
 plt.plot(apoints)
 plt.show()
+
+# Matplotlib offers the option for markers to mark where specific points intersect
+# run the following 6 lines of code separatelty
+import matplotlib.pyplot as plt
+import numpy as np
+apoints = np.array([2,7,6,8,10,4])
+bpoints = np.array([12,3,8,6,4,2])
+plt.plot(apoints,bpoints)
+plt.show()  
+
+# run the following 6 lines of code separatelty
+import matplotlib.pyplot as plt
+import numpy as np
+apoints = np.array([2,7,6,8,10,4])
+bpoints = np.array([12,3,8,6,4,2])
+plt.plot(apoints,bpoints,'*-.r',ms = 10,mec = "c",mfc = "c") # "mec changes the outline of the marker to cyan"
+# "mfc changes the face of the marker into cyan
+plt.show()  
