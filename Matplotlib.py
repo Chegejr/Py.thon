@@ -27,3 +27,28 @@ wpoints = np.array([1,8])
 zpoints = np.array([3,10])
 plt.plot(wpoints,zpoints)
 plt.show()
+
+# Plotting many points 
+# the points in both apoints and bpoints should be equal "6 values on apoints and 6 values on bpoints"
+import matplotlib.pyplot as plt
+import numpy as np
+apoints = np.array([2,4,6,8,10,12])
+bpoints = np.array([12,10,8,6,4,2])
+plt.plot(apoints,bpoints)
+plt.show()
+# plotting only points and not the line
+# run the following 6 lines of code separatelty
+import matplotlib.pyplot as plt
+import numpy as np
+apoints = np.array([2,7,6,8,10,4])
+bpoints = np.array([12,3,8,6,4,2])
+plt.plot(apoints,bpoints)
+plt.show()  
+
+# If no x or y points provided then the pyplot will pick the values accordingly starting from 0 untill it matvhes the number of values in the provided 
+# run the following 5 lines of code separately
+import matplotlib.pyplot as plt
+import numpy as np
+apoints = np.array([2,7,6,8,10,4]) # the points provided by the pyplot are {0 1 2 3 4 5}
+plt.plot(apoints)
+plt.show()
