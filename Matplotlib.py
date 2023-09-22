@@ -70,3 +70,30 @@ bpoints = np.array([12,3,8,6,4,2])
 plt.plot(apoints,bpoints,'*-.r',ms = 10,mec = "c",mfc = "c") # "mec changes the outline of the marker to cyan"
 # "mfc changes the face of the marker into cyan
 plt.show()  
+
+# run the following 6 lines of code separatelty
+# plotting multiple lines
+# Either by writing multple plt.plot functions or including all the lines to be drawn in a single plt.plot function
+import matplotlib.pyplot as plt
+import numpy as np
+apoints = np.array([12,7,3,8,10,4])
+bpoints = np.array([2,3,6,2,4,2])
+cpoints = np.array([6,7,6,3,0,4])
+dpoints = np.array([12,7,1,6,9,2])
+epoints = np.array([7,7,6,8,10,4])
+fpoints = np.array([1,3,11,6,4,9])
+plt.plot(apoints,bpoints,cpoints,dpoints,epoints,fpoints,linewidth = 2) # "mec changes the outline of the marker to red"
+# "mfc changes the face of the marker into cyan
+plt.show()  
+
+# Run the following 10 lines of code separately
+# Giving labels to our ploted axis
+# Use the xlabel() and ylabel() to name your plotted "x" and "y" axis
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+plt.plot(x, y)
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+plt.show()
