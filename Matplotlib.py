@@ -86,7 +86,7 @@ plt.plot(apoints,bpoints,cpoints,dpoints,epoints,fpoints,linewidth = 2) # "mec c
 # "mfc changes the face of the marker into cyan
 plt.show()  
 
-# Run the following 10 lines of code separately
+# Run the following 13 lines of code separately
 # Giving labels to our ploted axis
 # Use the xlabel() and ylabel() to name your plotted "x" and "y" axis
 import numpy as np
@@ -94,6 +94,9 @@ import matplotlib.pyplot as plt
 x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
 y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
 plt.plot(x, y)
-plt.xlabel("Average Pulse")
-plt.ylabel("Calorie Burnage")
+font1 = {'family':'serif','color':'blue','size':13}
+font2 = {'family':'serif','color':'darkred','size':17}
+plt.xlabel("Average Pulse",fontdict=font1) # Label for X axis
+plt.ylabel("Calorie Burnage",fontdict=font1) # Label for Y axis
+plt.title("Sports Watch",fontdict=font2,loc="right") # Adds a title to our plotted graph and places it to the right
 plt.show()
