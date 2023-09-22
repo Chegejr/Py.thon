@@ -96,7 +96,7 @@ y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
 plt.plot(x, y)
 font1 = {'family':'serif','color':'blue','size':13}
 font2 = {'family':'serif','color':'darkred','size':17}
-plt.xlabel("Average Pulse",fontdict=font1) # Label for X axis
-plt.ylabel("Calorie Burnage",fontdict=font1) # Label for Y axis
+plt.xlabel("Average Pulse",fontdict=font1) # Label for X axis."fontdict" takes in a dictionary containing information of the font
+plt.ylabel("Calorie Burnage",fontdict=font1) # Label for Y axis."fontdict" takes in a dictionary containing information of the font
 plt.title("Sports Watch",fontdict=font2,loc="right") # Adds a title to our plotted graph and places it to the right
 plt.show()
