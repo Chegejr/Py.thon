@@ -36,7 +36,7 @@ apoints = np.array([2,4,6,8,10,12])
 bpoints = np.array([12,10,8,6,4,2])
 plt.plot(apoints,bpoints)
 plt.show()
-# plotting only points and not the line
+# drawing a line without points or markers
 # run the following 6 lines of code separatelty
 import matplotlib.pyplot as plt
 import numpy as np
@@ -53,7 +53,7 @@ apoints = np.array([2,7,6,8,10,4]) # the points provided by the pyplot are {0 1 
 plt.plot(apoints)
 plt.show()
 
-# Matplotlib offers the option for markers to mark where specific points intersect
+# Matplotlib offers the option for markers to mark where specific points intersect. Drawing a line with markers or points included
 # run the following 6 lines of code separatelty
 import matplotlib.pyplot as plt
 import numpy as np
@@ -99,4 +99,20 @@ font2 = {'family':'serif','color':'darkred','size':17}
 plt.xlabel("Average Pulse",fontdict=font1) # Label for X axis."fontdict" takes in a dictionary containing information of the font
 plt.ylabel("Calorie Burnage",fontdict=font1) # Label for Y axis."fontdict" takes in a dictionary containing information of the font
 plt.title("Sports Watch",fontdict=font2,loc="right") # Adds a title to our plotted graph and places it to the right
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+population = 65000
+carOwners = 25000
+carPrices = np.array([200,400,600,800,1000,1400,1800,3500,10000,20000,30000])
+owners = np.array([3.5,8.5,2.5,1.8,1.67,1.45,1.4,1.2,1.4,0.458,0.884])
+
+plt.title("Car Owners against Car Prices",c = "r")
+plt.grid(color = "Green", linestyle = "--")
+plt.ylabel("No: of Owners in Millions")
+plt.xlabel("Car Prices In Grands")
+plt.plot(carPrices,owners,'*-.r',ms = 10,mec = "c",mfc = "c") # "mec changes the outline of the marker to cyan"
+# "mfc changes the face of the marker into cyan
 plt.show()
