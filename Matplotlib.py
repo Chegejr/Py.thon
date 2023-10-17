@@ -116,3 +116,30 @@ plt.xlabel("Car Prices In Grands")
 plt.plot(carPrices,owners,'*-.r',ms = 10,mec = "c",mfc = "c") # "mec changes the outline of the marker to cyan"
 # "mfc changes the face of the marker into cyan
 plt.show()
+
+# Displaying multiple graphs in a one  using the subplot
+# The subplot() function takes three arguments that describes the layout of the figure.
+# The layout is organized in rows and columns, which are represented by the first and second argument.
+# The third argument represents the index of the current plot.
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.array([1,2,3,4])
+y = np.array([4,3,2,1])
+
+plt.subplot(1, 2, 1)# the graph to be plotted wil be of (1) row and (2) columns and this will  be the (1) plot
+plt.plot(x,y)
+plt.title("Plot 1") # Sets the title of the first sub-graph
+plt.grid(color = "Green", linestyle = "--")
+
+x = np.array([3, 6, 8, 11])
+y = np.array([4, 8, 3, 7])
+
+plt.subplot(1, 2, 2)# the graph to be plotted wil be of (1) row and (2) columns and this will  be the (2) plot
+plt.plot(x,y)
+plt.title("Plot 1")# Sets the title of the second sub-graph
+plt.grid(color = "Green", linestyle = "--")
+
+plt.suptitle("Father of Graphs",c="r")# Sets the title of the main graph
+plt.show()
+
+
