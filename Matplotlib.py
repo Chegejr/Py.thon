@@ -219,3 +219,14 @@ x = np.random.normal(175,10,250)#The generated heights will be concentrated arou
 
 plt.hist(x)
 plt.show()
+
+#  Using pyplot, we can also draw pie charts 
+import numpy as np
+import matplotlib.pyplot as plt
+
+y = np.random.randint(100,size=5)
+myLabels = np.array(["Maths","Physics","Chemistry","Mechanis","Dynamics"])
+myExplode = [0.3,0,0,0,0]
+plt.pie(y,labels=myLabels,explode=myExplode)
+plt.legend(title="Subjects")
+plt.show()
