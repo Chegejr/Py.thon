@@ -142,4 +142,40 @@ plt.grid(color = "Green", linestyle = "--")
 plt.suptitle("Father of Graphs",c="r")# Sets the title of the main graph
 plt.show()
 
+# We can plot observations inform of dots and not the lines by use of scatter() function
+# The scatter() needs to arrays of the same size: one for x axis values and the other for y axis values
 
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.random.randint(10,size=10) # Generates 10 random numbers between 0-9
+y = np.random.randint(10,size=10)# Generates 10 random numbers between 0-9
+colors = np.random.randint(100,size=10)
+plt.scatter(x,y,c=colors,cmap='nipy_spectral')
+plt.colorbar()
+
+# Its also possible to plot two scatter observations in one figure
+# Always remember to put only one line of "plt.show()" when plotting multiple scatter observations in one figure.
+# If by chance you happen to put multiple "plt.show()"  then you will end up having multiple figures with single scatter observations
+# instead of having them in one figure
+
+a = np.random.randint(10,size=10) # Generates 10 random numbers between 0-9
+b = np.random.randint(10,size=10)# Generates 10 random numbers between 0-9
+plt.scatter(a,b,c="green")
+
+c = np.random.randint(10,size=10) # Generates 10 random numbers between 0-9
+d = np.random.randint(10,size=10)# Generates 10 random numbers between 0-9
+plt.scatter(c,d,c="red")
+
+e = np.random.randint(10,size=10) # Generates 10 random numbers between 0-9
+f = np.random.randint(10,size=10)# Generates 10 random numbers between 0-9
+colors = np.random.randint(10,size=100)
+plt.scatter(e,f,c="yellow")
+
+g = np.random.randint(10,size=10) # Generates 10 random numbers between 0-9
+h = np.random.randint(10,size=10)# Generates 10 random numbers between 0-9
+plt.scatter(g,h,c="blue")
+
+i = np.random.randint(10,size=10) # Generates 10 random numbers between 0-9
+j = np.random.randint(10,size=10)# Generates 10 random numbers between 0-9
+plt.scatter(i,j,c="black")
+plt.show()
