@@ -179,3 +179,30 @@ i = np.random.randint(10,size=10) # Generates 10 random numbers between 0-9
 j = np.random.randint(10,size=10)# Generates 10 random numbers between 0-9
 plt.scatter(i,j,c="black")
 plt.show()
+
+#  Using pyplot so far we have seen we can plot graphs, sctter plots and now bar graphs
+# the bars can be displayed bothe horizontally or vertically
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["Nike","Vans","Jordan","Clarks","Eazzy"])
+y = np.random.randint(1000,size=5)
+plt.subplot(1, 2, 1)#Using the subplot to plot two graphs in one figure
+plt.bar(x,y,color="black",width=0.5)
+plt.title("Types of shoes and Number of Users")
+
+a = np.array(["Benzo","Chev","Ferrari","Audi","Jeep"])
+b = np.random.randint(10000,size=5)
+plt.subplot(1, 2, 2) #Using the subplot to plot two graphs in one figure
+plt.bar(a,b,color="red",width=0.5)
+plt.title("Types cars and Number of owners")
+
+plt.show()
+
+
+# Assuming you want the bar graphs to be horizontal, use "plt.barh"
+x = np.array(["Benzo","Chev","Ferrari","Audi","Jeep"])
+y = np.random.randint(10000,size=5)
+plt.barh(x,y,color="green",height=0.5)
+plt.title("Types cars and Number of owners")
+plt.show()
