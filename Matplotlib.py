@@ -206,3 +206,16 @@ y = np.random.randint(10000,size=5)
 plt.barh(x,y,color="green",height=0.5)
 plt.title("Types cars and Number of owners")
 plt.show()
+
+# Also the pyplot allows us to create histograms 
+# A histogram is a graph showing frequency distributions.
+# It is a graph showing the number of observations within each given interval.
+# Example: Say you ask for the height of 250 people.
+# Lets use nump to generate 250 random heights concentrated around 175, the standard deviation is 10
+
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.random.normal(175,10,250)#The generated heights will be concentrated around 175, a standard deviation of 10, a total of 250 values
+
+plt.hist(x)
+plt.show()
