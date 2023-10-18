@@ -26,23 +26,47 @@ data = {
   "topass": [77, 45, 35, 79, 56]
 }
 xplayers =pd.DataFrame(data, index=["messi","cristiano","kevo","szcobolszai","neymar"])
-print(xplayers)
+print(xplayers) # Output below----->
+"""
+            topgol  topass
+messi           63      77
+cristiano       85      45
+kevo            59      35
+szoboszlai      34      79
+neymar          46      56
+"""
 
-#  Reading data in a csv file. comma separated files
+#  Reading data in a csv file. "comma separated files"
 #  Data in a csv file is stored in plaint readable text
-#  You can load a data from a csv file into a dataframe object by use of pd.read_csv("name of the file with .csv extension")
-#  Check for the maximum number rows the system is currently set at
+#  You can load data from a csv file into a dataframe object by use of pd.read_csv(name of the file with followed by ".csv" extension)
+#  Check for the maximum number rows the system is currently set at using "print(pd.options.display.max_rows)" #Output--------> 60
 
 import pandas as pd
 print(pd.options.display.max_rows) #Output--------> 60
 data = pd.read_csv("data.csv") #loading the data in our csv file into the dataframe object
 print(data) # because our number of rows in our data is more(169) than the system set number of rows(60), 
-# the output will only be the first and last 5 rows of the dataframe
+# the output will only be the first and last 5 rows of the dataframe.
+# Output below----->
+"""
+     Duration  Pulse  Maxpulse  Calories
+0          60    110       130     409.1
+1          60    117       145     479.0
+2          60    103       135     340.0
+3          45    109       175     282.4
+4          45    117       148     406.0
+..        ...    ...       ...       ...
+164        60    105       140     290.8
+165        60    110       145     300.0
+166        60    115       145     310.2
+167        75    120       150     320.4
+168        75    125       150     330.4
 
-print(data.to_string()) # we can print out the entire data in the dataframe using the to_string(),
+"""
+
+print(data.to_string()) # we can print out the entire data in the dataframe using the ".to_string()",
 # function even when the number of system set number of rows is less(60) than the the data(169) in the dataframe
 
-# another way of printing out the entire table without using the to_string() function is by setting the number of
+# another way of printing out the entire table without using the  ".to_string()" function is by setting the number of
 #  system set rows to a number higher than the number of rows in the csv file lets say mayb 1000
 # Run the following 4 lines of code separately
 import pandas as pd
@@ -57,13 +81,13 @@ print(data)
 # this values can either be mean, max and or min
 import pandas as pd
 data = pd.read_csv("data.csv")
-print(pd.options.display.max_rows)
+print(pd.options.display.max_rows) # Output---->60
 pd.options.display.max_rows = 1000
-print(pd.options.display.max_rows)
+print(pd.options.display.max_rows)# Output------>1000
 print(data)
 newdata = data.dropna() #by default the .dropna() returns a new dataframe and does not alter the original one
 print(newdata.to_string())
-# if by chance you dont want to return a new dataframe and want to make changes to the original datframe the set inplace value = true
+# if by chance you dont want to return a new dataframe and want to make changes to the original datframe then set inplace value = true
 data.dropna(inplace=True) #removing rows with empty cells by making changes to the original dataframe
 print(data.to_string())
 # Cleaning of empty or null values. Use the "dropna()" to remove empty rows
