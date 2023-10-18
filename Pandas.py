@@ -9,13 +9,13 @@
 # A series is like a column in a table
 import pandas as pd
 players = ["cristiano","messi","trossard","neymar","benzo"] # a list of players
-vplayers = pd.Series(players, index=["x","y","w","v","d"]) # Creating a pandas series and labels using the index
+vplayers = pd.Series(players, index=["x","y","w","v","d"]) # Creating a pandas series and labels using the "index=" keyword. Indexing helps in accesing specific elements from the created pandas series or "column"
 # function that takes in a list
-print(vplayers["d"]) #accessing values using the newly create labels
+print(vplayers["d"]) #accessing element at index "d" using the newly create labels. Output----->benzo
 
-topscorers = {"Pele":45,"robinho":37,"maradona":48,"messi":53,"ibrahimovic":46,"cristiano":56,"lewandowski":49} # We can also pass a dictionary to a series function to create a series
+topscorers = {"Pele":45,"robinho":37,"maradona":48,"messi":53,"ibrahimovic":46,"cristiano":56,"lewandowski":49} # We can also pass a dictionary to a series function to create a series "column"
 wplayers = pd.Series(topscorers)
-print(topscorers["cristiano"]) # note that the dictionary keys becomes our new labels and we can now access their value through indexing
+print(topscorers["cristiano"]) # note that the dictionary keys becomes our new labels and we can now access their value through indexing. Output------>56
 
 #  Datasets in pandas are multi deminsional tables called Dataframes.
 #  Series is like a single column from a table , A DataFrame is the entire table
