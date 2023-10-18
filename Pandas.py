@@ -87,14 +87,14 @@ print(pd.options.display.max_rows)# Output------>1000
 print(data)
 newdata = data.dropna() #by default the .dropna() returns a new dataframe and does not alter the original one
 print(newdata.to_string())
-# if by chance you dont want to return a new dataframe and want to make changes to the original datframe then set inplace value = true
+# if by chance you dont want to return a new dataframe and want to make changes to the original dataframe then set "inplace = true"
 data.dropna(inplace=True) #removing rows with empty cells by making changes to the original dataframe
 print(data.to_string())
-# Cleaning of empty or null values. Use the "dropna()" to remove empty rows
+# Want to clean data by getting rid of empty and (or) null values? Use the ".dropna()" function to remove rows containing empty cells and (or) null values
 
 
 import pandas as pd
-# below is a player library dataset
+# below is a football players dataset
 data = {
     "Goals":{
         "Pele":677,
@@ -138,7 +138,7 @@ data = {
     }
 }
 playerlibrary = pd.DataFrame(data)#loading the dataset into a pandas dataframe object
-print(playerlibrary)# output below         
+print(playerlibrary)# output below----->        
 """
           Goals  Assists  Matches  Age  Scoring Frequency per min
 Pele         677       89      867   72                         
@@ -148,12 +148,6 @@ gaucho       333       67      340   45                         23
 messi        834      432     1012   36                         
 cristiano    850      254     1115   37                          8
 """
-# in my above created player dataframe i have the Nationality column with three empty cells
-# Empty cells or null values can potentially give you wrong output after analyzing therefore they should be dealt with
-# one way of dealing with empty cells or null values is through deleting or removing the rows containing the empty cells
-# use the .dropna() to remove rows containing empty cells
-# by default the .dropna() returns a new dataframe and does not alter the original one,
-# if by chance you dont want to return a new dataframe but instead alter the original one, set "inplace =True"
 playerlibrary.fillna("Brazil",inplace=True)
 print(playerlibrary)
 # also you can chose to replace the empty cells with the mean, median or mode of the column
