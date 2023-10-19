@@ -163,7 +163,7 @@ print(data.to_string()) #Printing out the entire dataset
 x = data["Calories"].mean() #Calculating the mean of the calories column
 print("The mean for the Calories column is:",x) #The mean is --------->375.79024390243904
 data["Calories"].fillna(x.round(4),inplace=True) #Replacing the empty cells in the "Calories column" with the mean
-print(data.to_string()) #checkout row "141" among other rows and note the empt or the null value "NaN" has been replaced by the mean(375.7902)
+print(data.to_string()) #checkout row "141" among other rows and note the empty or the null value "NaN" has been replaced by the mean(375.7902)
 
 # Run the following 7 lines of code separately.----->May not run if you dont have the csv file 'data.csv'
 import pandas as pd
@@ -179,12 +179,12 @@ import pandas as pd
 data = pd.read_csv('data.csv') #Loading the data in the csv file into a Pandas dataframe object
 print(data.to_string()) #Printing out the entire dataset
 x = data["Calories"].mode()[0] #Calculating the mode of the calories column
-print("The mode for the Calories column is:",x) #The mode for the Calories column is: 318.6
+print("The mode for the Calories column is:",x) #The mode for the Calories column is: 300
 data["Calories"].fillna(x,inplace=True) #Replacing the empty cells in the "Calories column" with the mode
 print(data.to_string()) #checkout row "141" among other rows and note the empty or the null cells "NaN" have been replaced by the mode(300.0)
 
 # cleaning data of wrong format
-# there are only two ways to deal with dat of wrong format; tremove the rows containing wrong format or convert all the values in the column in one same format
+# there are only two ways to deal with data of wrong format; remove the rows containing wrong format or convert all the values in the column in one same format
 import pandas as pd
 data = pd.read_csv("data.csv")
 print(data.to_string())
@@ -203,7 +203,7 @@ for x in data.index:
 # dealing with duplicates
 import pandas as pd
 data = pd.read_csv("data.csv")
-print(data.duplicated) #checking if nour dataset has duplicates. returns a boolean value for every row
+print(data.duplicated) #checking if our dataset has duplicates. returns a boolean value for every row
 # if there are any duplicates we have to remove them
 data.drop_duplicates(inplace=True)#removing duplicates
 
